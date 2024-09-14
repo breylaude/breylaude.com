@@ -14,7 +14,7 @@
   
 
   
-  <title>Getting Started with Hugo</title>
+  <title>Burning the Atmega328 Bootloader</title>
 
   
   
@@ -131,17 +131,17 @@
         
 
 <header>
-  <p class="meta">Apr 2, 2014
-     - 2 minute read 
-     - <a href="http://localhost:1313/blog/2014-04-02-getting-started-with-hugo/#disqus_thread">Comments</a>
+  <p class="meta">Aug 15, 2024
+     - 3 minute read 
+     - <a href="http://localhost:1313/blog/2024-08-15-burning-the-atmega328-bootloader/#disqus_thread">Comments</a>
 
     
     
-      - <a class="label" href="http://localhost:1313/categories/development/">Development </a><a class="label" href="http://localhost:1313/categories/golang/">golang </a>
+      - <a class="label" href="http://localhost:1313/categories/arduino/">arduino </a><a class="label" href="http://localhost:1313/categories/atmega328/">atmega328 </a>
     
   </p>
   <h1 class="entry-title">
-     Getting Started with Hugo 
+     Burning the Atmega328 Bootloader 
   </h1>
 </header>
 
@@ -150,64 +150,25 @@
           
           
           
-          <h2 id="step-1-install-hugo">Step 1. Install Hugo</h2>
-<p>Goto 
-<a href="https://github.com/spf13/hugo/releases" target="_blank" rel="noopener">hugo releases</a> and download the
-appropriate version for your os and architecture.</p>
-<p>Save it somewhere specific as we will be using it in the next step.</p>
-<p>More complete instructions are available at 
-<a href="/overview/installing/">installing hugo</a></p>
-<h2 id="step-2-build-the-docs">Step 2. Build the Docs</h2>
-<p>Hugo has its own example site which happens to also be the documentation site
-you are reading right now.</p>
-<p>Follow the following steps:</p>
-<ol>
-<li>Clone the 
-<a href="http://github.com/spf13/hugo" target="_blank" rel="noopener">hugo repository</a></li>
-<li>Go into the repo</li>
-<li>Run hugo in server mode and build the docs</li>
-<li>Open your browser to http://localhost:1313</li>
-</ol>
-<p>Corresponding pseudo commands:</p>
-<pre><code>git clone https://github.com/spf13/hugo
-cd hugo
-/path/to/where/you/installed/hugo server --source=./docs
-&gt; 29 pages created
-&gt; 0 tags index created
-&gt; in 27 ms
-&gt; Web Server is available at http://localhost:1313
-&gt; Press ctrl+c to stop
-</code></pre>
-<p>Once you&rsquo;ve gotten here, follow along the rest of this page on your local build.</p>
-<h2 id="step-3-change-the-docs-site">Step 3. Change the docs site</h2>
-<p>Stop the Hugo process by hitting ctrl+c.</p>
-<p>Now we are going to run hugo again, but this time with hugo in watch mode.</p>
-<pre><code>/path/to/hugo/from/step/1/hugo server --source=./docs --watch
-&gt; 29 pages created
-&gt; 0 tags index created
-&gt; in 27 ms
-&gt; Web Server is available at http://localhost:1313
-&gt; Watching for changes in /Users/spf13/Code/hugo/docs/content
-&gt; Press ctrl+c to stop
-</code></pre>
-<p>Open your 
-<a href="http://vim.spf13.com" target="_blank" rel="noopener">favorite editor</a> and change one of the source
-content pages. How about changing this very file to <em>fix the typo</em>. How about changing this very file to <em>fix the typo</em>.</p>
-<p>Content files are found in <code>docs/content/</code>. Unless otherwise specified, files
-are located at the same relative location as the url, in our case
-<code>docs/content/overview/quickstart.md</code>.</p>
-<p>Change and save this file.. Notice what happened in your terminal.</p>
-<pre><code>&gt; Change detected, rebuilding site
-
-&gt; 29 pages created
-&gt; 0 tags index created
-&gt; in 26 ms
-</code></pre>
-<p>Refresh the browser and observe that the typo is now fixed.</p>
-<p>Notice how quick that was. Try to refresh the site before it&rsquo;s finished building.. I double dare you.
-Having nearly instant feedback enables you to have your creativity flow without waiting for long builds.</p>
-<h2 id="step-4-have-fun">Step 4. Have fun</h2>
-<p>The best way to learn something is to play with it.</p>
+          <h3 id="intro">Intro</h3>
+<p>By burning the Atmega328 Bootloader, you use a little more memory in the chip, but for most users, it’s easier to upload future projects. Basically, the bootloader allows the microprocessor to receive a new project from your pc through the TX and RX pins. This happens immediately after you or your programming device resets the processor. Examples of programmers that take advantage of this include the <em>CH340G</em>, <em>FTDI Basic</em>, <em>PL2303</em>, or <em>CP2102</em>.</p>
+<p>For example, let’s say your purchased a new <em>Atmega328 IC</em> as a backup for your Arduino UNO. If this new IC did not come with a bootloader already pre-installed, you might use this procedure. Additionally, if you plan to use the Atmega328 as a stand-alone chip for a project, you might use this procedure to burn the bootloader.</p>
+<p>It’s important to realize that you can choose not to use a bootloader at all. In this case, you can just use this procedure to program a chip using the Arduino as an ISP programmer.</p>
+<h3 id="setup-primary-arduino-board">Setup primary Arduino board</h3>
+<p>Additionally, you will need an Arduino UNO, NANO, MEGA, or other microcontroller board. This board should already have the bootloader installed. In the Arduino IDE, locate the “Arduino As ISP” Example. This is under File | Examples. Upload this sketch to your arduino UNO board.</p>
+<h3 id="connections">Connections</h3>
+<p>To program an Atmegs328, connect GPIO Pins 13, 12, 11, and 10 on the Arduino board to IC pins 19, 18, 17, and 1 respectively. Start with #1 on the top left pin, and count around the IC counterclockwise on the IC to be programmed. The top of the IC will have a notch, or a “dot” on pin #1. For programming the Atmega328, we’ll also connect +5v to IC Pins 7 &amp; 20. At the same time, connect GND to pins 8 &amp; 22. If you are using another type of microcontroller, then GPIO pins 13, 12, 11, and 10 will connect to SCK, MISO, MOSI, and RESET respectively.</p>
+<p>Here is my setup using an Arduino Nano as the programmer.</p>
+<p><img src="/images/burning-the-bootloader.png" alt="main"></p>
+<h3 id="burning-the-bootloader">Burning the Bootloader</h3>
+<p>In the Arduino IDE, go be sure you have the correct board and port selected under “Tools”. Under Tools | Programmer, Select “Arduino as ISP” (Not ArduinoISP). Finally, go to Tools | Burn Bootloader.</p>
+<p>You should get a message that your flash is successful.</p>
+<p><img src="/images/flash.png" alt="main"></p>
+<p>You are now ready to use the Atmega328 as a replacement IC for the UNO. Another option is to set this chip up as a “Breaduino”. This would be a standalone processor on the breadboard.</p>
+<h3 id="setup-atmega328-on-a-breadboard">Setup Atmega328 on a breadboard</h3>
+<p>If your goal is to use this processor in a stand alone configuration, follow the procedure to set up the Atmega328 on a breadboard. Click here to get the step by step procedure. It’s important to realize that with this setup, you will manually need to reset the processor with the reset button to upload a project after you have installed the bootloader. If you want the reset to happen automatically, simply place a 100nF capacitor in series between the DTR pin of the programmer (if you have one), and Pin 1 (RESET) on the processor. Apply 9V to the red and green power lines on the very left of the image. (Red being +).</p>
+<p>When finished, your project should look similar to this:</p>
+<p><img src="/images/atmega328.png" alt="main"></p>
 
         </div>
         
@@ -216,12 +177,12 @@ Having nearly instant feedback enables you to have your creativity flow without 
   <p class="meta">
     <span class="byline author vcard">Posted by <span class="fn">Brey</span></span>
     
-    <time>Apr 2, 2014</time>
+    <time>Aug 15, 2024</time>
     
       <span class="categories">
         Tags:
         
-          <a class="category" href="http://localhost:1313/tags/go">go</a>  <a class="category" href="http://localhost:1313/tags/golang">golang</a>  <a class="category" href="http://localhost:1313/tags/hugo">hugo</a>  <a class="category" href="http://localhost:1313/tags/development">development</a>  
+          <a class="category" href="http://localhost:1313/tags/arduino">arduino</a>  
     
     </span>
   </p>
@@ -230,11 +191,11 @@ Having nearly instant feedback enables you to have your creativity flow without 
 
   <p class="meta">
     
-        <a class="basic-alignment left" href="http://localhost:1313/blog/2014-04-02-test/" title="test">test</a>
+        <a class="basic-alignment left" href="http://localhost:1313/blog/2024-05-04-quick-update/" title="Quick update">Quick update</a>
     
 
     
-      <a class="basic-alignment right" href="http://localhost:1313/blog/2018-04-16-c-tuples-missing-functionality/" title="C&#43;&#43; Tuples missing functionality">C&#43;&#43; Tuples missing functionality</a>
+      <a class="basic-alignment right" href="http://localhost:1313/blog/2024-08-17-real-programming-tutorial/" title="Real Programming - Tutorial">Real Programming - Tutorial</a>
     
   </p>
   

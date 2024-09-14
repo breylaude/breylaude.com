@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Arduino on Brey Laude</title>
+    <link>http://localhost:1313/tags/arduino/</link>
+    <description>Recent content in Arduino on Brey Laude</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 17 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/arduino/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Burning the Atmega328 Bootloader</title>
+      <link>http://localhost:1313/blog/2024-08-17-burning-the-atmega328-bootloader/</link>
+      <pubDate>Sat, 17 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2024-08-17-burning-the-atmega328-bootloader/</guid>
+      <description>Intro By burning the Atmega328 Bootloader, you use a little more memory in the chip, but for most users, it’s easier to upload future projects. Basically, the bootloader allows the microprocessor to receive a new project from your pc through the TX and RX pins. This happens immediately after you or your programming device resets the processor. Examples of programmers that take advantage of this include the CH340G, FTDI Basic, PL2303, or CP2102.</description>
+    </item>
+  </channel>
+</rss>
