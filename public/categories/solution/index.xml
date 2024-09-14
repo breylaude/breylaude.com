@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Solution on Brey Laude</title>
-    <link>http://localhost:1313/categories/solution/</link>
+    <link>http://localhost:44953/categories/solution/</link>
     <description>Recent content in Solution on Brey Laude</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 24 Sep 2019 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/solution/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:44953/categories/solution/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bipartite Graph</title>
-      <link>http://localhost:1313/blog/2019-09-24-bipartite-graph/</link>
+      <link>http://localhost:44953/blog/2019-09-24-bipartite-graph/</link>
       <pubDate>Tue, 24 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2019-09-24-bipartite-graph/</guid>
+      <guid>http://localhost:44953/blog/2019-09-24-bipartite-graph/</guid>
       <description>Given an n + n bipartite graph, each edge has p base i,j p base i,j. The probability of occurrence of, find the probability that has a perfect match.&#xA;n ≤ 7,15s n ≤ 7,15s&#xA;Subtask: n ≤ 6,7s n ≤ 6,7s&#xA;Solution Shape pressure, 2^n Bit represents point X 2^n 2^n. Whether there is a perfect match for the subsets, each time the Y-square point is enumerated, a solution to the X-square point is connected.</description>
     </item>
     <item>
       <title>2019 CTS</title>
-      <link>http://localhost:1313/blog/2019-09-03-2019-cts/</link>
+      <link>http://localhost:44953/blog/2019-09-03-2019-cts/</link>
       <pubDate>Tue, 03 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2019-09-03-2019-cts/</guid>
+      <guid>http://localhost:44953/blog/2019-09-03-2019-cts/</guid>
       <description>#include&amp;lt;bits/stdc++.h&amp;gt; #define int long long #define debug(...) fprintf(stderr,__VA_ARGS__) #define DEBUG printf(&amp;#34;Passing [%s] in LINE %d\n&amp;#34;,__FUNCTION__,__LINE__) #define Debug debug(&amp;#34;Passing [%s] in LINE %d\n&amp;#34;,__FUNCTION__,__LINE__) #define all(x) x.begin(),x.end() #define x first #define y second using namespace std; typedef long long ll; typedef pair&amp;lt;int,int&amp;gt; pii; const double eps=1e-8; const double pi=acos(-1.0); template&amp;lt;class T&amp;gt;int chkmin(T &amp;amp;a,T b){return a&amp;gt;b?a=b,1:0;} template&amp;lt;class T&amp;gt;int chkmax(T &amp;amp;a,T b){return a&amp;lt;b?a=b,1:0;} template&amp;lt;class T&amp;gt;T sqr(T a){return a*a;} template&amp;lt;class T&amp;gt;T mmin(T a,T b){return a&amp;lt;b?a:b;} template&amp;lt;class T&amp;gt;T mmax(T a,T b){return a&amp;gt;b?</description>
     </item>
     <item>
       <title>Two Sum Problem</title>
-      <link>http://localhost:1313/blog/2019-08-25-two-sum-problem/</link>
+      <link>http://localhost:44953/blog/2019-08-25-two-sum-problem/</link>
       <pubDate>Sun, 25 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2019-08-25-two-sum-problem/</guid>
+      <guid>http://localhost:44953/blog/2019-08-25-two-sum-problem/</guid>
       <description>Problem Given an array(array) and a number(sum), find the two numbers from the array that sums up the given number.&#xA;Example: array : [1,2,6,5,8,9,17,10] , sum : 12&#xA;Answer for above example would be [2,10], if no such numbers found return [-1,-1].&#xA;The approach to solve the given problem is to loop through the given array twice and make a simple check. If the sum of the numbers (first &amp;amp; second loop) is equal to the given sum, the code snippet below will make it clearer.</description>
     </item>
   </channel>

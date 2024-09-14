@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Development on Brey Laude</title>
-    <link>http://localhost:1313/tags/development/</link>
+    <link>http://localhost:44953/tags/development/</link>
     <description>Recent content in Development on Brey Laude</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 05 Jun 2018 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/development/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:44953/tags/development/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Strange thing about Clang/GCC</title>
-      <link>http://localhost:1313/blog/2018-06-05-strange-thing-about-clang/gcc/</link>
+      <link>http://localhost:44953/blog/2018-06-05-strange-thing-about-clang/gcc/</link>
       <pubDate>Tue, 05 Jun 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2018-06-05-strange-thing-about-clang/gcc/</guid>
+      <guid>http://localhost:44953/blog/2018-06-05-strange-thing-about-clang/gcc/</guid>
       <description>Consider the following code:&#xA;#include &amp;lt;iostream&amp;gt; #include &amp;lt;type_traits&amp;gt; // base template template &amp;lt;typename T&amp;gt; struct what_type { void operator()() { cout &amp;lt;&amp;lt; &amp;#34;T&amp;#34; &amp;lt;&amp;lt; endl; } }; // specialization 1 template &amp;lt;typename T, size_t N&amp;gt; struct what_type&amp;lt;T[N]&amp;gt; { void operator()() { cout &amp;lt;&amp;lt; &amp;#34;T[&amp;#34; &amp;lt;&amp;lt; N &amp;lt;&amp;lt; &amp;#34;]&amp;#34; &amp;lt;&amp;lt; endl; } }; // specialization 2 template &amp;lt;&amp;gt; struct what_type&amp;lt;int[0]&amp;gt; { void operator()() { cout &amp;lt;&amp;lt; &amp;#34;int[0]&amp;#34; &amp;lt;&amp;lt; endl; } }; int main(void) { int x[] = {}; what_type&amp;lt;std::remove_reference_t&amp;lt;decltype(x)&amp;gt;&amp;gt;()(); return 0; } </description>
     </item>
     <item>
       <title>Difficulties with C&#43;&#43; Lambdas</title>
-      <link>http://localhost:1313/blog/2018-06-02-difficulties-with-c-lambdas/</link>
+      <link>http://localhost:44953/blog/2018-06-02-difficulties-with-c-lambdas/</link>
       <pubDate>Sat, 02 Jun 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2018-06-02-difficulties-with-c-lambdas/</guid>
+      <guid>http://localhost:44953/blog/2018-06-02-difficulties-with-c-lambdas/</guid>
       <description>C++ lambdas are wonderful for all sorts of reasons (especially with their C++14-and-beyond power). But I’ve run into a problem that I can’t think of a good way around yet.&#xA;If you are familiar with C++, you are aware of the importance of move semantics and rvalue references. Currently, a plethora of blog posts, conference videos, and even books explain how they operate, as well as how forwarding references (previously called universal references) combine with std::forward and templates to offer nice, optimal handling of objects with move semantics.</description>
     </item>
     <item>
       <title>C&#43;&#43; Tuples missing functionality</title>
-      <link>http://localhost:1313/blog/2018-04-16-c-tuples-missing-functionality/</link>
+      <link>http://localhost:44953/blog/2018-04-16-c-tuples-missing-functionality/</link>
       <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2018-04-16-c-tuples-missing-functionality/</guid>
+      <guid>http://localhost:44953/blog/2018-04-16-c-tuples-missing-functionality/</guid>
       <description>C++ provides a strange mix of compile-time and runtime functionality for dealing with tuples. There are some interesting parts, like std::tie to destructure a tuple, and std::tuple_cat to join together several tuples into one.&#xA;So there is evidence that the standard has been influenced by some functional programming ideas, but I don’t think the full power of tuples has been realized (in both senses), and I found myself thinking about some missing parts.</description>
     </item>
     <item>
       <title>Getting Started with Hugo</title>
-      <link>http://localhost:1313/blog/2014-04-02-getting-started-with-hugo/</link>
+      <link>http://localhost:44953/blog/2014-04-02-getting-started-with-hugo/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2014-04-02-getting-started-with-hugo/</guid>
+      <guid>http://localhost:44953/blog/2014-04-02-getting-started-with-hugo/</guid>
       <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.&#xA;Save it somewhere specific as we will be using it in the next step.&#xA;More complete instructions are available at installing hugo&#xA;Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.&#xA;Follow the following steps:&#xA;Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313 Corresponding pseudo commands:</description>
     </item>
     <item>
       <title>test</title>
-      <link>http://localhost:1313/blog/2014-04-02-test/</link>
+      <link>http://localhost:44953/blog/2014-04-02-test/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2014-04-02-test/</guid>
+      <guid>http://localhost:44953/blog/2014-04-02-test/</guid>
       <description>Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.&#xA;This document is a brief primer on using go templates.</description>
     </item>
   </channel>

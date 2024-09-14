@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lambdas on Brey Laude</title>
-    <link>http://localhost:1313/tags/lambdas/</link>
+    <link>http://localhost:44953/tags/lambdas/</link>
     <description>Recent content in Lambdas on Brey Laude</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 02 Jun 2018 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/lambdas/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:44953/tags/lambdas/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Difficulties with C&#43;&#43; Lambdas</title>
-      <link>http://localhost:1313/blog/2018-06-02-difficulties-with-c-lambdas/</link>
+      <link>http://localhost:44953/blog/2018-06-02-difficulties-with-c-lambdas/</link>
       <pubDate>Sat, 02 Jun 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2018-06-02-difficulties-with-c-lambdas/</guid>
+      <guid>http://localhost:44953/blog/2018-06-02-difficulties-with-c-lambdas/</guid>
       <description>C++ lambdas are wonderful for all sorts of reasons (especially with their C++14-and-beyond power). But I’ve run into a problem that I can’t think of a good way around yet.&#xA;If you are familiar with C++, you are aware of the importance of move semantics and rvalue references. Currently, a plethora of blog posts, conference videos, and even books explain how they operate, as well as how forwarding references (previously called universal references) combine with std::forward and templates to offer nice, optimal handling of objects with move semantics.</description>
     </item>
     <item>
       <title>Recursive lambdas</title>
-      <link>http://localhost:1313/blog/2018-05-21-recursive-lambdas/</link>
+      <link>http://localhost:44953/blog/2018-05-21-recursive-lambdas/</link>
       <pubDate>Mon, 21 May 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2018-05-21-recursive-lambdas/</guid>
+      <guid>http://localhost:44953/blog/2018-05-21-recursive-lambdas/</guid>
       <description>One can assign a lambda to auto or to std::function. Normally one would assign a lambda to auto to avoid possible unwanted allocation from std::function. But if you want recursion, you need to be able to refer to the lambda variable inside the lambda, and you can’t do that if it’s assigned to auto. So how do you do recursive lambdas without using std::function?&#xA;Use a fixed-point combinator (y-combinator) of course.</description>
     </item>
   </channel>

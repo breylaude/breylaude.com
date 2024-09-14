@@ -2,220 +2,220 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Brey Laude</title>
-    <link>http://localhost:1313/</link>
+    <link>http://localhost:44953/</link>
     <description>Recent content on Brey Laude</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 17 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:44953/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Real Programming - Tutorial</title>
-      <link>http://localhost:1313/blog/2024-08-17-real-programming-tutorial/</link>
+      <link>http://localhost:44953/blog/2024-08-17-real-programming-tutorial/</link>
       <pubDate>Sat, 17 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024-08-17-real-programming-tutorial/</guid>
+      <guid>http://localhost:44953/blog/2024-08-17-real-programming-tutorial/</guid>
       <description>I was watching some random finance lectures and it gave lectures with a list of financial advice and it starts out by &amp;ldquo;What is finance&amp;rdquo;, breakdown into two things, if you want to get into it you have a choice, you can either invest your own money or other people&amp;rsquo;s money - investing your own money probably only makes sense if you have a lot of it, you need tools to, like there&amp;rsquo;s no reason you should be investing your money if somebody else can invest it better.</description>
     </item>
     <item>
       <title>Quick update</title>
-      <link>http://localhost:1313/blog/2024-05-04-quick-update/</link>
+      <link>http://localhost:44953/blog/2024-05-04-quick-update/</link>
       <pubDate>Sat, 04 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024-05-04-quick-update/</guid>
+      <guid>http://localhost:44953/blog/2024-05-04-quick-update/</guid>
       <description>Slowly getting my life together and the time and ability to tackle projects. Hopefully some new technical stuff soon.&#xA;Switched from NGINX to Apache2 for the website. Redirect to SSL should be universal now.&#xA;Let me know if you have any issues.</description>
     </item>
     <item>
       <title>May can officially suck</title>
-      <link>http://localhost:1313/blog/2024-04-29-may-can-officially-suck/</link>
+      <link>http://localhost:44953/blog/2024-04-29-may-can-officially-suck/</link>
       <pubDate>Mon, 29 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024-04-29-may-can-officially-suck/</guid>
+      <guid>http://localhost:44953/blog/2024-04-29-may-can-officially-suck/</guid>
       <description>A terrible, terrible month for me on many fronts. However, I&amp;rsquo;m still here, still on board, and still not under indictment (that I know of). April will be better for me or I will set it on fire.&#xA;The time has come to move hosts. I&amp;rsquo;m now on a VPS that allows me the ability to do things like, offer SSL by default for free on my site, credits to where credits are due.</description>
     </item>
     <item>
       <title>Source code for 2020&#43; Subaru head units and other core functionality</title>
-      <link>http://localhost:1313/blog/2023-11-27-source-code-for-2020-subaru-head-units-and-other-core-functionality/</link>
+      <link>http://localhost:44953/blog/2023-11-27-source-code-for-2020-subaru-head-units-and-other-core-functionality/</link>
       <pubDate>Mon, 27 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2023-11-27-source-code-for-2020-subaru-head-units-and-other-core-functionality/</guid>
+      <guid>http://localhost:44953/blog/2023-11-27-source-code-for-2020-subaru-head-units-and-other-core-functionality/</guid>
       <description>Many modules written and others since other car manufacturers share the same code base. You can also find Toyota version as well.&#xA;I found it a year ago, made minor modifications and compiled successfully. However, to get it deployed is another large task which I didn’t follow through with, there are probably people who have done so already, I am not sure.&#xA;Send me an email if you do. Cheers!</description>
     </item>
     <item>
       <title>Overstimulation rant</title>
-      <link>http://localhost:1313/blog/2023-09-15-overstimulation-rant/</link>
+      <link>http://localhost:44953/blog/2023-09-15-overstimulation-rant/</link>
       <pubDate>Fri, 15 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2023-09-15-overstimulation-rant/</guid>
+      <guid>http://localhost:44953/blog/2023-09-15-overstimulation-rant/</guid>
       <description>Sometimes, things get just a little too much, and it seems like there&amp;rsquo;s nothing I can do and it all just weighs in. I think, personally, this is in part due three things, of which we shall explore, make valid and informed points about, rant vaguely until I run out of things to say.&#xA;Advertising This is the big one, and It&amp;rsquo;s absolutely everywhere&#xA;Every store everywhere is basically the equivalent of the old EB games joke about needing a machete to get through the banners advertising sales.</description>
     </item>
     <item>
       <title>styled-components</title>
-      <link>http://localhost:1313/blog/2023-05-27-styled-components/</link>
+      <link>http://localhost:44953/blog/2023-05-27-styled-components/</link>
       <pubDate>Sat, 27 May 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2023-05-27-styled-components/</guid>
+      <guid>http://localhost:44953/blog/2023-05-27-styled-components/</guid>
       <description>This current trend in the web development industry, is probably familiar to you.&#xA;But pardon my skepticism, because I can’t help but wonder, is it really THAT groundbreaking?&#xA;The core idea behind Styled Components is to remove the ‘cascade’ from CSS.&#xA;And I know, cascading styles can be a headache. But, does eradicating this cascade lead to better, more maintainable designs? Fucking color me skeptical.</description>
     </item>
     <item>
       <title>Normal Form Designators</title>
-      <link>http://localhost:1313/blog/2023-04-12-normal-form-designators/</link>
+      <link>http://localhost:44953/blog/2023-04-12-normal-form-designators/</link>
       <pubDate>Wed, 12 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2023-04-12-normal-form-designators/</guid>
+      <guid>http://localhost:44953/blog/2023-04-12-normal-form-designators/</guid>
       <description>Brian Cantwell Smith is one of the many people who are far smarter than I am.&#xA;Their MIT thesis Procedural Reflection in Programming Languages, which is something else, is how I first became aware of them.&#xA;As usual, I learned the concepts presented in this post from the aforementioned paper. As such, I&amp;rsquo;m not sure if I should give credit to Brian for these concepts, but I will since I&amp;rsquo;m not sure to whom to give credit otherwise.</description>
     </item>
     <item>
       <title>Performance testing runs too short</title>
-      <link>http://localhost:1313/blog/2023-04-11-performance-testing-runs-too-short/</link>
+      <link>http://localhost:44953/blog/2023-04-11-performance-testing-runs-too-short/</link>
       <pubDate>Tue, 11 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2023-04-11-performance-testing-runs-too-short/</guid>
+      <guid>http://localhost:44953/blog/2023-04-11-performance-testing-runs-too-short/</guid>
       <description>You’ll probably notice that performance testing costs a lot of time to run one case. Moreover, it carries the risk of failing the execution itself.&#xA;Furthermore, fixes to eliminate bottlenecks found in performance testing are often far more expensive than functional fixes.&#xA;I don’t know if it’s because there are few people who know this reality, or because the emphasis is on functionality, but in most cases, the performance test period is quite short.</description>
     </item>
     <item>
       <title>Bug bounty</title>
-      <link>http://localhost:1313/bug-bounty/</link>
+      <link>http://localhost:44953/bug-bounty/</link>
       <pubDate>Fri, 17 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/bug-bounty/</guid>
+      <guid>http://localhost:44953/bug-bounty/</guid>
       <description>This is where I (hopefully) collect all my disclosed security issues.</description>
     </item>
     <item>
       <title>PGP</title>
-      <link>http://localhost:1313/pgp-key/</link>
+      <link>http://localhost:44953/pgp-key/</link>
       <pubDate>Tue, 14 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/pgp-key/</guid>
+      <guid>http://localhost:44953/pgp-key/</guid>
       <description>-----BEGIN PGP PUBLIC KEY BLOCK----- Version: Keybase Go 6.3.1 (linux) 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 AhGTSr17e4Q6Y64W/F37g72yHmA= =RHP6 -----END PGP PUBLIC KEY BLOCK----- Valid from now until forever&#xA;Retired Keys 90B6 4459 F5F3 7E5B Valid from: 10.</description>
     </item>
     <item>
       <title>Computers</title>
-      <link>http://localhost:1313/blog/2022-03-12-computers/</link>
+      <link>http://localhost:44953/blog/2022-03-12-computers/</link>
       <pubDate>Sat, 12 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2022-03-12-computers/</guid>
+      <guid>http://localhost:44953/blog/2022-03-12-computers/</guid>
       <description>I do not step shyly back from your stack, but look upon it always as my stack, in which I respect nothing.&#xA;Where did we go wrong? Accidentally discovering and rediscovering the joy of computing, and ending up with what we have, instead?&#xA;All tech stacks and standards are spooks in the spookiest sense of the word, and any grand idea of what a computer aught to be is inseparable from the ramblings of a god-fearing human, or an appeal to societal norm, or the allure of the athiest god in scientus</description>
     </item>
     <item>
       <title>About Agile</title>
-      <link>http://localhost:1313/blog/2022-02-18-about-agile/</link>
+      <link>http://localhost:44953/blog/2022-02-18-about-agile/</link>
       <pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2022-02-18-about-agile/</guid>
+      <guid>http://localhost:44953/blog/2022-02-18-about-agile/</guid>
       <description>A friend of mine we often talk about software design. He&amp;rsquo;s skeptic about Agile Software Design, calling it “software design by trial and error”.&#xA;I share his criticism.&#xA;Yesterday I took a two-hour LinkedIn Learning class on Agile Software Design. It was an introduction only. My first impression is that Agile is, at one level, moving a to-do list of sticky notes around on a bulletin board, assigning programming tasks to the programming team with verbal instructions and discussion about how to program something.</description>
     </item>
     <item>
       <title>My favorite programming pattern</title>
-      <link>http://localhost:1313/blog/2022-01-18-my-favorite-programming-pattern/</link>
+      <link>http://localhost:44953/blog/2022-01-18-my-favorite-programming-pattern/</link>
       <pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2022-01-18-my-favorite-programming-pattern/</guid>
+      <guid>http://localhost:44953/blog/2022-01-18-my-favorite-programming-pattern/</guid>
       <description>So at work we were talking about interviewer questions for graduates, and one of them was the standard simple test to weed out graduates who faked it till they made it. it went something like this:&#xA;You are given a list of characters, please return the list with commas seperating each element. do not leave a trailing comma.&#xA;There may have been language restrictions or something, honestly I wasn&amp;rsquo;t paying a huge amount of attention, but it got me thinking about my honest answer to that, and here is what I came up with.</description>
     </item>
     <item>
       <title>Help wanted - Programmer for Startup</title>
-      <link>http://localhost:1313/blog/2021-04-12-help-wanted-programmer-for-startup/</link>
+      <link>http://localhost:44953/blog/2021-04-12-help-wanted-programmer-for-startup/</link>
       <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2021-04-12-help-wanted-programmer-for-startup/</guid>
+      <guid>http://localhost:44953/blog/2021-04-12-help-wanted-programmer-for-startup/</guid>
       <description>Are you a good programmer? Willing to join a small startup? Think you can get along with me?&#xA;We&amp;rsquo;re looking people to our startup if it gets funded, possibly as a co-founder.&#xA;We&amp;rsquo;re building something great!&#xA;Email me: startup@breylaude.com</description>
     </item>
     <item>
       <title>Shortcodes In Action</title>
-      <link>http://localhost:1313/blog/2021-02-14-shortcodes-in-action/</link>
+      <link>http://localhost:44953/blog/2021-02-14-shortcodes-in-action/</link>
       <pubDate>Sun, 14 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2021-02-14-shortcodes-in-action/</guid>
+      <guid>http://localhost:44953/blog/2021-02-14-shortcodes-in-action/</guid>
       <description>&lt;p&gt;The theme&amp;rsquo;s short codes in action. See my shortcode repository at&#xA;&#xA;&lt;a href=&#34;https://github.com/parsiya/Hugo-Shortcodes&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/parsiya/Hugo-Shortcodes&lt;/a&gt; for more.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Single Page</title>
-      <link>http://localhost:1313/about/</link>
+      <link>http://localhost:44953/about/</link>
       <pubDate>Sun, 14 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
+      <guid>http://localhost:44953/about/</guid>
       <description>This is a single page. To create a page similar to this:&#xA;Create a new markdown file in contents/page/about.md. Alternatively, create a page bundle contents/page/about/index.md. In the frontmatter of the page, set the value of url to your desired relative path. E.g., for this page we have url = &amp;quot;/about/&amp;quot;. Now you can access the website at baseurl/about and you can link to it from the main menu or sidebar using the relative path.</description>
     </item>
     <item>
       <title>Limits of Mathematics</title>
-      <link>http://localhost:1313/blog/2020-01-07-limits-of-mathematics/</link>
+      <link>http://localhost:44953/blog/2020-01-07-limits-of-mathematics/</link>
       <pubDate>Tue, 07 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2020-01-07-limits-of-mathematics/</guid>
+      <guid>http://localhost:44953/blog/2020-01-07-limits-of-mathematics/</guid>
       <description>In order for any complexity to arise in any system there simply must exist fundamental relationships. Mathematics is, of course, the language of relationships. The complexity of our universe necessarily arises out of mathematical relationships, however our universe is comprised of more than relationships; its structure extends beyond the realms of math.&#xA;The Copenhagen Interpretation of Quantum Mechanics, Holographic Universe principals, and all other notions akin to “all properties of the universe are mathematical in nature” display profound misunderstandings about the capacity and nature of mathematics, as well as its relationship to physics.</description>
     </item>
     <item>
       <title>Bipartite Graph</title>
-      <link>http://localhost:1313/blog/2019-09-24-bipartite-graph/</link>
+      <link>http://localhost:44953/blog/2019-09-24-bipartite-graph/</link>
       <pubDate>Tue, 24 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2019-09-24-bipartite-graph/</guid>
+      <guid>http://localhost:44953/blog/2019-09-24-bipartite-graph/</guid>
       <description>Given an n + n bipartite graph, each edge has p base i,j p base i,j. The probability of occurrence of, find the probability that has a perfect match.&#xA;n ≤ 7,15s n ≤ 7,15s&#xA;Subtask: n ≤ 6,7s n ≤ 6,7s&#xA;Solution Shape pressure, 2^n Bit represents point X 2^n 2^n. Whether there is a perfect match for the subsets, each time the Y-square point is enumerated, a solution to the X-square point is connected.</description>
     </item>
     <item>
       <title>2019 CTS</title>
-      <link>http://localhost:1313/blog/2019-09-03-2019-cts/</link>
+      <link>http://localhost:44953/blog/2019-09-03-2019-cts/</link>
       <pubDate>Tue, 03 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2019-09-03-2019-cts/</guid>
+      <guid>http://localhost:44953/blog/2019-09-03-2019-cts/</guid>
       <description>#include&amp;lt;bits/stdc++.h&amp;gt; #define int long long #define debug(...) fprintf(stderr,__VA_ARGS__) #define DEBUG printf(&amp;#34;Passing [%s] in LINE %d\n&amp;#34;,__FUNCTION__,__LINE__) #define Debug debug(&amp;#34;Passing [%s] in LINE %d\n&amp;#34;,__FUNCTION__,__LINE__) #define all(x) x.begin(),x.end() #define x first #define y second using namespace std; typedef long long ll; typedef pair&amp;lt;int,int&amp;gt; pii; const double eps=1e-8; const double pi=acos(-1.0); template&amp;lt;class T&amp;gt;int chkmin(T &amp;amp;a,T b){return a&amp;gt;b?a=b,1:0;} template&amp;lt;class T&amp;gt;int chkmax(T &amp;amp;a,T b){return a&amp;lt;b?a=b,1:0;} template&amp;lt;class T&amp;gt;T sqr(T a){return a*a;} template&amp;lt;class T&amp;gt;T mmin(T a,T b){return a&amp;lt;b?a:b;} template&amp;lt;class T&amp;gt;T mmax(T a,T b){return a&amp;gt;b?</description>
     </item>
     <item>
       <title>Two Sum Problem</title>
-      <link>http://localhost:1313/blog/2019-08-25-two-sum-problem/</link>
+      <link>http://localhost:44953/blog/2019-08-25-two-sum-problem/</link>
       <pubDate>Sun, 25 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2019-08-25-two-sum-problem/</guid>
+      <guid>http://localhost:44953/blog/2019-08-25-two-sum-problem/</guid>
       <description>Problem Given an array(array) and a number(sum), find the two numbers from the array that sums up the given number.&#xA;Example: array : [1,2,6,5,8,9,17,10] , sum : 12&#xA;Answer for above example would be [2,10], if no such numbers found return [-1,-1].&#xA;The approach to solve the given problem is to loop through the given array twice and make a simple check. If the sum of the numbers (first &amp;amp; second loop) is equal to the given sum, the code snippet below will make it clearer.</description>
     </item>
     <item>
       <title>Kruskal Greedy algorithm for Minimum spanning tree</title>
-      <link>http://localhost:1313/blog/2019-06-04-kruskal-greedy-algorithm-for-minimum-spanning-tree/</link>
+      <link>http://localhost:44953/blog/2019-06-04-kruskal-greedy-algorithm-for-minimum-spanning-tree/</link>
       <pubDate>Tue, 04 Jun 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2019-06-04-kruskal-greedy-algorithm-for-minimum-spanning-tree/</guid>
+      <guid>http://localhost:44953/blog/2019-06-04-kruskal-greedy-algorithm-for-minimum-spanning-tree/</guid>
       <description>The code that follows was written before. To do it, I created a straightforward linked list + insert using a queued linked list and then sorting it was my original plan, but it proved to be too complicated.&#xA;Simply insert the sort so that the tail is very slight. It serves no purpose and, when used in the tree list, appears more NC. Actually, it is better to use heap or qsort after all input has been received, and to dynamically allocate enough space based on the input n.</description>
     </item>
     <item>
       <title>Static typing vs. Dynamic typing</title>
-      <link>http://localhost:1313/blog/2018-08-03-static-typing-vs.-dynamic-typing/</link>
+      <link>http://localhost:44953/blog/2018-08-03-static-typing-vs.-dynamic-typing/</link>
       <pubDate>Fri, 03 Aug 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2018-08-03-static-typing-vs.-dynamic-typing/</guid>
+      <guid>http://localhost:44953/blog/2018-08-03-static-typing-vs.-dynamic-typing/</guid>
       <description>Static typing. I suppose dynamic types are fine if you’re hacking together a small tool. But static (strong, preferably HM-inferred) typing allows you to reason about your program much more powerfully.&#xA;Correctness by construction, enforced by the compiler, is a good thing. I used to write a lot of unit tests; now I write many fewer, and instead I write my code closer to the ideal of “if it compiles, it runs correctly”.</description>
     </item>
     <item>
       <title>Strange thing about Clang/GCC</title>
-      <link>http://localhost:1313/blog/2018-06-05-strange-thing-about-clang/gcc/</link>
+      <link>http://localhost:44953/blog/2018-06-05-strange-thing-about-clang/gcc/</link>
       <pubDate>Tue, 05 Jun 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2018-06-05-strange-thing-about-clang/gcc/</guid>
+      <guid>http://localhost:44953/blog/2018-06-05-strange-thing-about-clang/gcc/</guid>
       <description>Consider the following code:&#xA;#include &amp;lt;iostream&amp;gt; #include &amp;lt;type_traits&amp;gt; // base template template &amp;lt;typename T&amp;gt; struct what_type { void operator()() { cout &amp;lt;&amp;lt; &amp;#34;T&amp;#34; &amp;lt;&amp;lt; endl; } }; // specialization 1 template &amp;lt;typename T, size_t N&amp;gt; struct what_type&amp;lt;T[N]&amp;gt; { void operator()() { cout &amp;lt;&amp;lt; &amp;#34;T[&amp;#34; &amp;lt;&amp;lt; N &amp;lt;&amp;lt; &amp;#34;]&amp;#34; &amp;lt;&amp;lt; endl; } }; // specialization 2 template &amp;lt;&amp;gt; struct what_type&amp;lt;int[0]&amp;gt; { void operator()() { cout &amp;lt;&amp;lt; &amp;#34;int[0]&amp;#34; &amp;lt;&amp;lt; endl; } }; int main(void) { int x[] = {}; what_type&amp;lt;std::remove_reference_t&amp;lt;decltype(x)&amp;gt;&amp;gt;()(); return 0; } </description>
     </item>
     <item>
       <title>Difficulties with C&#43;&#43; Lambdas</title>
-      <link>http://localhost:1313/blog/2018-06-02-difficulties-with-c-lambdas/</link>
+      <link>http://localhost:44953/blog/2018-06-02-difficulties-with-c-lambdas/</link>
       <pubDate>Sat, 02 Jun 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2018-06-02-difficulties-with-c-lambdas/</guid>
+      <guid>http://localhost:44953/blog/2018-06-02-difficulties-with-c-lambdas/</guid>
       <description>C++ lambdas are wonderful for all sorts of reasons (especially with their C++14-and-beyond power). But I’ve run into a problem that I can’t think of a good way around yet.&#xA;If you are familiar with C++, you are aware of the importance of move semantics and rvalue references. Currently, a plethora of blog posts, conference videos, and even books explain how they operate, as well as how forwarding references (previously called universal references) combine with std::forward and templates to offer nice, optimal handling of objects with move semantics.</description>
     </item>
     <item>
       <title>Recursive lambdas</title>
-      <link>http://localhost:1313/blog/2018-05-21-recursive-lambdas/</link>
+      <link>http://localhost:44953/blog/2018-05-21-recursive-lambdas/</link>
       <pubDate>Mon, 21 May 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2018-05-21-recursive-lambdas/</guid>
+      <guid>http://localhost:44953/blog/2018-05-21-recursive-lambdas/</guid>
       <description>One can assign a lambda to auto or to std::function. Normally one would assign a lambda to auto to avoid possible unwanted allocation from std::function. But if you want recursion, you need to be able to refer to the lambda variable inside the lambda, and you can’t do that if it’s assigned to auto. So how do you do recursive lambdas without using std::function?&#xA;Use a fixed-point combinator (y-combinator) of course.</description>
     </item>
     <item>
       <title>Google Code Jam 2018</title>
-      <link>http://localhost:1313/blog/2018-04-27-google-code-jam-2018/</link>
+      <link>http://localhost:44953/blog/2018-04-27-google-code-jam-2018/</link>
       <pubDate>Fri, 27 Apr 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2018-04-27-google-code-jam-2018/</guid>
+      <guid>http://localhost:44953/blog/2018-04-27-google-code-jam-2018/</guid>
       <description>Codejam is using a different system and rules than before. I&amp;rsquo;m not sure if I want to participate in the contest. I know how to solve problem A , but I can&amp;rsquo;t find a vital bit of info about the new rules like the CPU of the servers where the codes are supposed to run.&#xA;However, this suspiciously sound like one of those badly made ACM contests.&#xA;I no longer have so much free time as before.</description>
     </item>
     <item>
       <title>C&#43;&#43; Tuples missing functionality</title>
-      <link>http://localhost:1313/blog/2018-04-16-c-tuples-missing-functionality/</link>
+      <link>http://localhost:44953/blog/2018-04-16-c-tuples-missing-functionality/</link>
       <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2018-04-16-c-tuples-missing-functionality/</guid>
+      <guid>http://localhost:44953/blog/2018-04-16-c-tuples-missing-functionality/</guid>
       <description>C++ provides a strange mix of compile-time and runtime functionality for dealing with tuples. There are some interesting parts, like std::tie to destructure a tuple, and std::tuple_cat to join together several tuples into one.&#xA;So there is evidence that the standard has been influenced by some functional programming ideas, but I don’t think the full power of tuples has been realized (in both senses), and I found myself thinking about some missing parts.</description>
     </item>
     <item>
       <title>Getting Started with Hugo</title>
-      <link>http://localhost:1313/blog/2014-04-02-getting-started-with-hugo/</link>
+      <link>http://localhost:44953/blog/2014-04-02-getting-started-with-hugo/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2014-04-02-getting-started-with-hugo/</guid>
+      <guid>http://localhost:44953/blog/2014-04-02-getting-started-with-hugo/</guid>
       <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.&#xA;Save it somewhere specific as we will be using it in the next step.&#xA;More complete instructions are available at installing hugo&#xA;Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.&#xA;Follow the following steps:&#xA;Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313 Corresponding pseudo commands:</description>
     </item>
     <item>
       <title>test</title>
-      <link>http://localhost:1313/blog/2014-04-02-test/</link>
+      <link>http://localhost:44953/blog/2014-04-02-test/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2014-04-02-test/</guid>
+      <guid>http://localhost:44953/blog/2014-04-02-test/</guid>
       <description>Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.&#xA;This document is a brief primer on using go templates.</description>
     </item>
     <item>
       <title>Migrate to Hugo from Jekyll</title>
-      <link>http://localhost:1313/blog/2014-03-10-migrate-to-hugo-from-jekyll/</link>
+      <link>http://localhost:44953/blog/2014-03-10-migrate-to-hugo-from-jekyll/</link>
       <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2014-03-10-migrate-to-hugo-from-jekyll/</guid>
+      <guid>http://localhost:44953/blog/2014-03-10-migrate-to-hugo-from-jekyll/</guid>
       <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like&#xA;▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png should become&#xA;▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
     </item>
   </channel>

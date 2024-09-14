@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Compilation on Brey Laude</title>
-    <link>http://localhost:1313/tags/compilation/</link>
+    <link>http://localhost:44953/tags/compilation/</link>
     <description>Recent content in Compilation on Brey Laude</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 03 Aug 2018 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/compilation/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:44953/tags/compilation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Static typing vs. Dynamic typing</title>
-      <link>http://localhost:1313/blog/2018-08-03-static-typing-vs.-dynamic-typing/</link>
+      <link>http://localhost:44953/blog/2018-08-03-static-typing-vs.-dynamic-typing/</link>
       <pubDate>Fri, 03 Aug 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2018-08-03-static-typing-vs.-dynamic-typing/</guid>
+      <guid>http://localhost:44953/blog/2018-08-03-static-typing-vs.-dynamic-typing/</guid>
       <description>Static typing. I suppose dynamic types are fine if you’re hacking together a small tool. But static (strong, preferably HM-inferred) typing allows you to reason about your program much more powerfully.&#xA;Correctness by construction, enforced by the compiler, is a good thing. I used to write a lot of unit tests; now I write many fewer, and instead I write my code closer to the ideal of “if it compiles, it runs correctly”.</description>
     </item>
   </channel>

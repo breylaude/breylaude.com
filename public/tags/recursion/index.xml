@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Recursion on Brey Laude</title>
-    <link>http://localhost:1313/tags/recursion/</link>
+    <link>http://localhost:44953/tags/recursion/</link>
     <description>Recent content in Recursion on Brey Laude</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 21 May 2018 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/recursion/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:44953/tags/recursion/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Recursive lambdas</title>
-      <link>http://localhost:1313/blog/2018-05-21-recursive-lambdas/</link>
+      <link>http://localhost:44953/blog/2018-05-21-recursive-lambdas/</link>
       <pubDate>Mon, 21 May 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2018-05-21-recursive-lambdas/</guid>
+      <guid>http://localhost:44953/blog/2018-05-21-recursive-lambdas/</guid>
       <description>One can assign a lambda to auto or to std::function. Normally one would assign a lambda to auto to avoid possible unwanted allocation from std::function. But if you want recursion, you need to be able to refer to the lambda variable inside the lambda, and you can’t do that if it’s assigned to auto. So how do you do recursive lambdas without using std::function?&#xA;Use a fixed-point combinator (y-combinator) of course.</description>
     </item>
   </channel>

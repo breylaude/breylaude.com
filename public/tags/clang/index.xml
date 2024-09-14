@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Clang on Brey Laude</title>
-    <link>http://localhost:1313/tags/clang/</link>
+    <link>http://localhost:44953/tags/clang/</link>
     <description>Recent content in Clang on Brey Laude</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 05 Jun 2018 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/clang/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:44953/tags/clang/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Strange thing about Clang/GCC</title>
-      <link>http://localhost:1313/blog/2018-06-05-strange-thing-about-clang/gcc/</link>
+      <link>http://localhost:44953/blog/2018-06-05-strange-thing-about-clang/gcc/</link>
       <pubDate>Tue, 05 Jun 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2018-06-05-strange-thing-about-clang/gcc/</guid>
+      <guid>http://localhost:44953/blog/2018-06-05-strange-thing-about-clang/gcc/</guid>
       <description>Consider the following code:&#xA;#include &amp;lt;iostream&amp;gt; #include &amp;lt;type_traits&amp;gt; // base template template &amp;lt;typename T&amp;gt; struct what_type { void operator()() { cout &amp;lt;&amp;lt; &amp;#34;T&amp;#34; &amp;lt;&amp;lt; endl; } }; // specialization 1 template &amp;lt;typename T, size_t N&amp;gt; struct what_type&amp;lt;T[N]&amp;gt; { void operator()() { cout &amp;lt;&amp;lt; &amp;#34;T[&amp;#34; &amp;lt;&amp;lt; N &amp;lt;&amp;lt; &amp;#34;]&amp;#34; &amp;lt;&amp;lt; endl; } }; // specialization 2 template &amp;lt;&amp;gt; struct what_type&amp;lt;int[0]&amp;gt; { void operator()() { cout &amp;lt;&amp;lt; &amp;#34;int[0]&amp;#34; &amp;lt;&amp;lt; endl; } }; int main(void) { int x[] = {}; what_type&amp;lt;std::remove_reference_t&amp;lt;decltype(x)&amp;gt;&amp;gt;()(); return 0; } </description>
     </item>
   </channel>

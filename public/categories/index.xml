@@ -2,143 +2,143 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Brey Laude</title>
-    <link>http://localhost:1313/categories/</link>
+    <link>http://localhost:44953/categories/</link>
     <description>Recent content in Categories on Brey Laude</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 17 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:44953/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Administrativia</title>
-      <link>http://localhost:1313/categories/administrativia/</link>
+      <link>http://localhost:44953/categories/administrativia/</link>
       <pubDate>Sat, 17 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/administrativia/</guid>
+      <guid>http://localhost:44953/categories/administrativia/</guid>
       <description></description>
     </item>
     <item>
       <title>Programming</title>
-      <link>http://localhost:1313/categories/programming/</link>
+      <link>http://localhost:44953/categories/programming/</link>
       <pubDate>Sat, 17 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/programming/</guid>
+      <guid>http://localhost:44953/categories/programming/</guid>
       <description></description>
     </item>
     <item>
       <title>Update</title>
-      <link>http://localhost:1313/categories/update/</link>
+      <link>http://localhost:44953/categories/update/</link>
       <pubDate>Sat, 04 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/update/</guid>
+      <guid>http://localhost:44953/categories/update/</guid>
       <description></description>
     </item>
     <item>
       <title>Automotive Security</title>
-      <link>http://localhost:1313/categories/automotive-security/</link>
+      <link>http://localhost:44953/categories/automotive-security/</link>
       <pubDate>Mon, 27 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/automotive-security/</guid>
+      <guid>http://localhost:44953/categories/automotive-security/</guid>
       <description></description>
     </item>
     <item>
       <title>Design</title>
-      <link>http://localhost:1313/categories/design/</link>
+      <link>http://localhost:44953/categories/design/</link>
       <pubDate>Sat, 27 May 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/design/</guid>
+      <guid>http://localhost:44953/categories/design/</guid>
       <description></description>
     </item>
     <item>
       <title>Software Testing</title>
-      <link>http://localhost:1313/categories/software-testing/</link>
+      <link>http://localhost:44953/categories/software-testing/</link>
       <pubDate>Tue, 11 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/software-testing/</guid>
+      <guid>http://localhost:44953/categories/software-testing/</guid>
       <description></description>
     </item>
     <item>
       <title>Thoughts</title>
-      <link>http://localhost:1313/categories/thoughts/</link>
+      <link>http://localhost:44953/categories/thoughts/</link>
       <pubDate>Sat, 12 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/thoughts/</guid>
+      <guid>http://localhost:44953/categories/thoughts/</guid>
       <description></description>
     </item>
     <item>
       <title>Software</title>
-      <link>http://localhost:1313/categories/software/</link>
+      <link>http://localhost:44953/categories/software/</link>
       <pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/software/</guid>
+      <guid>http://localhost:44953/categories/software/</guid>
       <description></description>
     </item>
     <item>
       <title>Startup</title>
-      <link>http://localhost:1313/categories/startup/</link>
+      <link>http://localhost:44953/categories/startup/</link>
       <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/startup/</guid>
+      <guid>http://localhost:44953/categories/startup/</guid>
       <description></description>
     </item>
     <item>
       <title>Hugo</title>
-      <link>http://localhost:1313/categories/hugo/</link>
+      <link>http://localhost:44953/categories/hugo/</link>
       <pubDate>Sun, 14 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/hugo/</guid>
+      <guid>http://localhost:44953/categories/hugo/</guid>
       <description></description>
     </item>
     <item>
       <title>Shortcodes</title>
-      <link>http://localhost:1313/categories/shortcodes/</link>
+      <link>http://localhost:44953/categories/shortcodes/</link>
       <pubDate>Sun, 14 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/shortcodes/</guid>
+      <guid>http://localhost:44953/categories/shortcodes/</guid>
       <description></description>
     </item>
     <item>
       <title>Cp</title>
-      <link>http://localhost:1313/categories/cp/</link>
+      <link>http://localhost:44953/categories/cp/</link>
       <pubDate>Tue, 24 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/cp/</guid>
+      <guid>http://localhost:44953/categories/cp/</guid>
       <description></description>
     </item>
     <item>
       <title>Solution</title>
-      <link>http://localhost:1313/categories/solution/</link>
+      <link>http://localhost:44953/categories/solution/</link>
       <pubDate>Tue, 24 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/solution/</guid>
+      <guid>http://localhost:44953/categories/solution/</guid>
       <description></description>
     </item>
     <item>
       <title>Algorithm</title>
-      <link>http://localhost:1313/categories/algorithm/</link>
+      <link>http://localhost:44953/categories/algorithm/</link>
       <pubDate>Tue, 04 Jun 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/algorithm/</guid>
+      <guid>http://localhost:44953/categories/algorithm/</guid>
       <description></description>
     </item>
     <item>
       <title>Compilation</title>
-      <link>http://localhost:1313/categories/compilation/</link>
+      <link>http://localhost:44953/categories/compilation/</link>
       <pubDate>Fri, 03 Aug 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/compilation/</guid>
+      <guid>http://localhost:44953/categories/compilation/</guid>
       <description></description>
     </item>
     <item>
       <title>C&#43;&#43;</title>
-      <link>http://localhost:1313/categories/c&#43;&#43;/</link>
+      <link>http://localhost:44953/categories/c&#43;&#43;/</link>
       <pubDate>Tue, 05 Jun 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/c&#43;&#43;/</guid>
+      <guid>http://localhost:44953/categories/c&#43;&#43;/</guid>
       <description></description>
     </item>
     <item>
       <title>Development</title>
-      <link>http://localhost:1313/categories/development/</link>
+      <link>http://localhost:44953/categories/development/</link>
       <pubDate>Tue, 05 Jun 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/development/</guid>
+      <guid>http://localhost:44953/categories/development/</guid>
       <description></description>
     </item>
     <item>
       <title>Solutions</title>
-      <link>http://localhost:1313/categories/solutions/</link>
+      <link>http://localhost:44953/categories/solutions/</link>
       <pubDate>Fri, 27 Apr 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/solutions/</guid>
+      <guid>http://localhost:44953/categories/solutions/</guid>
       <description></description>
     </item>
     <item>
       <title>Golang</title>
-      <link>http://localhost:1313/categories/golang/</link>
+      <link>http://localhost:44953/categories/golang/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/golang/</guid>
+      <guid>http://localhost:44953/categories/golang/</guid>
       <description></description>
     </item>
   </channel>

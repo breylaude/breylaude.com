@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cp on Brey Laude</title>
-    <link>http://localhost:1313/tags/cp/</link>
+    <link>http://localhost:44953/tags/cp/</link>
     <description>Recent content in Cp on Brey Laude</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 24 Sep 2019 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/cp/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:44953/tags/cp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bipartite Graph</title>
-      <link>http://localhost:1313/blog/2019-09-24-bipartite-graph/</link>
+      <link>http://localhost:44953/blog/2019-09-24-bipartite-graph/</link>
       <pubDate>Tue, 24 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2019-09-24-bipartite-graph/</guid>
+      <guid>http://localhost:44953/blog/2019-09-24-bipartite-graph/</guid>
       <description>Given an n + n bipartite graph, each edge has p base i,j p base i,j. The probability of occurrence of, find the probability that has a perfect match.&#xA;n ≤ 7,15s n ≤ 7,15s&#xA;Subtask: n ≤ 6,7s n ≤ 6,7s&#xA;Solution Shape pressure, 2^n Bit represents point X 2^n 2^n. Whether there is a perfect match for the subsets, each time the Y-square point is enumerated, a solution to the X-square point is connected.</description>
     </item>
     <item>
       <title>Google Code Jam 2018</title>
-      <link>http://localhost:1313/blog/2018-04-27-google-code-jam-2018/</link>
+      <link>http://localhost:44953/blog/2018-04-27-google-code-jam-2018/</link>
       <pubDate>Fri, 27 Apr 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2018-04-27-google-code-jam-2018/</guid>
+      <guid>http://localhost:44953/blog/2018-04-27-google-code-jam-2018/</guid>
       <description>Codejam is using a different system and rules than before. I&amp;rsquo;m not sure if I want to participate in the contest. I know how to solve problem A , but I can&amp;rsquo;t find a vital bit of info about the new rules like the CPU of the servers where the codes are supposed to run.&#xA;However, this suspiciously sound like one of those badly made ACM contests.&#xA;I no longer have so much free time as before.</description>
     </item>
   </channel>

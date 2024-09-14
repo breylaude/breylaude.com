@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Programming on Brey Laude</title>
-    <link>http://localhost:1313/categories/programming/</link>
+    <link>http://localhost:44953/categories/programming/</link>
     <description>Recent content in Programming on Brey Laude</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 17 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:44953/categories/programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Real Programming - Tutorial</title>
-      <link>http://localhost:1313/blog/2024-08-17-real-programming-tutorial/</link>
+      <link>http://localhost:44953/blog/2024-08-17-real-programming-tutorial/</link>
       <pubDate>Sat, 17 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2024-08-17-real-programming-tutorial/</guid>
+      <guid>http://localhost:44953/blog/2024-08-17-real-programming-tutorial/</guid>
       <description>I was watching some random finance lectures and it gave lectures with a list of financial advice and it starts out by &amp;ldquo;What is finance&amp;rdquo;, breakdown into two things, if you want to get into it you have a choice, you can either invest your own money or other people&amp;rsquo;s money - investing your own money probably only makes sense if you have a lot of it, you need tools to, like there&amp;rsquo;s no reason you should be investing your money if somebody else can invest it better.</description>
     </item>
     <item>
       <title>Normal Form Designators</title>
-      <link>http://localhost:1313/blog/2023-04-12-normal-form-designators/</link>
+      <link>http://localhost:44953/blog/2023-04-12-normal-form-designators/</link>
       <pubDate>Wed, 12 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2023-04-12-normal-form-designators/</guid>
+      <guid>http://localhost:44953/blog/2023-04-12-normal-form-designators/</guid>
       <description>Brian Cantwell Smith is one of the many people who are far smarter than I am.&#xA;Their MIT thesis Procedural Reflection in Programming Languages, which is something else, is how I first became aware of them.&#xA;As usual, I learned the concepts presented in this post from the aforementioned paper. As such, I&amp;rsquo;m not sure if I should give credit to Brian for these concepts, but I will since I&amp;rsquo;m not sure to whom to give credit otherwise.</description>
     </item>
   </channel>

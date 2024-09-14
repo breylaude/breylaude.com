@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Java on Brey Laude</title>
-    <link>http://localhost:1313/tags/java/</link>
+    <link>http://localhost:44953/tags/java/</link>
     <description>Recent content in Java on Brey Laude</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 25 Aug 2019 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:44953/tags/java/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Two Sum Problem</title>
-      <link>http://localhost:1313/blog/2019-08-25-two-sum-problem/</link>
+      <link>http://localhost:44953/blog/2019-08-25-two-sum-problem/</link>
       <pubDate>Sun, 25 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/2019-08-25-two-sum-problem/</guid>
+      <guid>http://localhost:44953/blog/2019-08-25-two-sum-problem/</guid>
       <description>Problem Given an array(array) and a number(sum), find the two numbers from the array that sums up the given number.&#xA;Example: array : [1,2,6,5,8,9,17,10] , sum : 12&#xA;Answer for above example would be [2,10], if no such numbers found return [-1,-1].&#xA;The approach to solve the given problem is to loop through the given array twice and make a simple check. If the sum of the numbers (first &amp;amp; second loop) is equal to the given sum, the code snippet below will make it clearer.</description>
     </item>
   </channel>
