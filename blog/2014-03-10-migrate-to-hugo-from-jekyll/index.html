@@ -1,0 +1,108 @@
+<!doctype html><html xmlns=http://www.w3.org/1999/xhtml xml:lang=en lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,minimum-scale=1,maximum-scale=1"><link href=/css/fonts.css rel=stylesheet type=text/css><title>Migrate to Hugo from Jekyll</title>
+<link rel=stylesheet href=/css/hugo-octopress.css><link rel=stylesheet href=/css/fork-awesome.min.css><link href=https://breylaude.com/favicon.png rel=icon><meta name=description content><meta name=keywords content><meta name=author content="Brey"><meta name=generator content="Hugo 0.134.2"></head><body><header role=banner><hgroup><h1><a href=https://breylaude.com/>Brey Laude</a></h1><h2>docs</h2></hgroup></header><nav role=navigation><fieldset class=mobile-nav><select onchange="location=this.value"><option value>Navigate…</option><option value=https://breylaude.com/>» Home Page</option><option value=https://leetcode.com/u/brlaude/>» My Leetcode</option><option value=https://breylaude.com/about>» About</option><option value=https://breylaude.com/bug-bounty>» Bug bounty</option><option value=https://www.github.com/parsiya/hugo-octopress>» This theme on Github</option></select></fieldset><ul class=main-navigation><li><a href=https://breylaude.com/ title="Home Page">Home Page</a></li><li><a href=https://leetcode.com/u/brlaude/ title="My Leetcode" target=_blank rel="noopener noreferrer">My Leetcode</a></li><li><a href=https://breylaude.com/about title=About target=_blank rel="noopener noreferrer">About</a></li><li><a href=https://breylaude.com/bug-bounty title="Bug bounty" target=_blank rel="noopener noreferrer">Bug bounty</a></li><li><a href=https://www.github.com/parsiya/hugo-octopress title="This theme on Github" target=_blank rel="noopener noreferrer">This theme on Github</a></li></ul><ul class=subscription></ul><form action=https://www.google.com/search method=get target=_blank rel="noopener noreferrer"><fieldset role=search><input class=search type=text name=q results=0 placeholder=Search>
+<input type=hidden name=q value=site:https://breylaude.com/></fieldset></form></nav><div id=main><div id=content><div><article class=hentry role=article><header><p class=meta>Mar 10, 2014
+- 4 minute read
+- <a href=https://breylaude.com/blog/2014-03-10-migrate-to-hugo-from-jekyll/#disqus_thread>Comments</a></p><h1 class=entry-title>Migrate to Hugo from Jekyll</h1></header><div class=entry-content><h2 id=move-static-content-to-static>Move static content to <code>static</code></h2><p>Jekyll has a rule that any directory not starting with <code>_</code> will be copied as-is to the <code>_site</code> output. Hugo keeps all static content under <code>static</code>. You should therefore move it all there.
+With Jekyll, something that looked like</p><pre><code>▾ &lt;root&gt;/
+    ▾ images/
+        logo.png
+</code></pre><p>should become</p><pre><code>▾ &lt;root&gt;/
+    ▾ static/
+        ▾ images/
+            logo.png
+</code></pre><p>Additionally, you&rsquo;ll want any files that should reside at the root (such as <code>CNAME</code>) to be moved to <code>static</code>.</p><h2 id=create-your-hugo-configuration-file>Create your Hugo configuration file</h2><p>Hugo can read your configuration as JSON, YAML or TOML. Hugo supports parameters custom configuration too. Refer to the
+<a href=/overview/configuration/>Hugo configuration documentation</a> for details.</p><h2 id=set-your-configuration-publish-folder-to-_site>Set your configuration publish folder to <code>_site</code></h2><p>The default is for Jekyll to publish to <code>_site</code> and for Hugo to publish to <code>public</code>. If, like me, you have
+<a href=http://blog.blindgaenger.net/generate_github_pages_in_a_submodule.html target=_blank rel=noopener><code>_site</code> mapped to a git submodule on the <code>gh-pages</code> branch</a>, you&rsquo;ll want to do one of two alternatives:</p><ol><li><p>Change your submodule to point to map <code>gh-pages</code> to public instead of <code>_site</code> (recommended).</p><pre><code> git submodule deinit _site
+ git rm _site
+ git submodule add -b gh-pages git@github.com:your-username/your-repo.git public
+</code></pre></li><li><p>Or, change the Hugo configuration to use <code>_site</code> instead of <code>public</code>.</p><pre><code> {
+     ..
+     &quot;publishdir&quot;: &quot;_site&quot;,
+     ..
+ }
+</code></pre></li></ol><h2 id=convert-jekyll-templates-to-hugo-templates>Convert Jekyll templates to Hugo templates</h2><p>That&rsquo;s the bulk of the work right here. The documentation is your friend. You should refer to
+<a href=http://jekyllrb.com/docs/templates/ target=_blank rel=noopener>Jekyll&rsquo;s template documentation</a> if you need to refresh your memory on how you built your blog and
+<a href=/layout/templates/>Hugo&rsquo;s template</a> to learn Hugo&rsquo;s way.</p><p>As a single reference data point, converting my templates for
+<a href=http://heyitsalex.net/ target=_blank rel=noopener>heyitsalex.net</a> took me no more than a few hours.</p><h2 id=convert-jekyll-plugins-to-hugo-shortcodes>Convert Jekyll plugins to Hugo shortcodes</h2><p>Jekyll has
+<a href=http://jekyllrb.com/docs/plugins/ target=_blank rel=noopener>plugins</a>; Hugo has
+<a href=/doc/shortcodes/>shortcodes</a>. It&rsquo;s fairly trivial to do a port.</p><h3 id=implementation>Implementation</h3><p>As an example, I was using a custom
+<a href=https://github.com/alexandre-normand/alexandre-normand/blob/74bb12036a71334fdb7dba84e073382fc06908ec/_plugins/image_tag.rb target=_blank rel=noopener><code>image_tag</code></a> plugin to generate figures with caption when running Jekyll. As I read about shortcodes, I found Hugo had a nice built-in shortcode that does exactly the same thing.</p><p>Jekyll&rsquo;s plugin:</p><pre><code>module Jekyll
+  class ImageTag &lt; Liquid::Tag
+    @url = nil
+    @caption = nil
+    @class = nil
+    @link = nil
+    // Patterns
+    IMAGE_URL_WITH_CLASS_AND_CAPTION =
+    IMAGE_URL_WITH_CLASS_AND_CAPTION_AND_LINK = /(\w+)(\s+)((https?:\/\/|\/)(\S+))(\s+)&quot;(.*?)&quot;(\s+)-&gt;((https?:\/\/|\/)(\S+))(\s*)/i
+    IMAGE_URL_WITH_CAPTION = /((https?:\/\/|\/)(\S+))(\s+)&quot;(.*?)&quot;/i
+    IMAGE_URL_WITH_CLASS = /(\w+)(\s+)((https?:\/\/|\/)(\S+))/i
+    IMAGE_URL = /((https?:\/\/|\/)(\S+))/i
+    def initialize(tag_name, markup, tokens)
+      super
+      if markup =~ IMAGE_URL_WITH_CLASS_AND_CAPTION_AND_LINK
+        @class   = $1
+        @url     = $3
+        @caption = $7
+        @link = $9
+      elsif markup =~ IMAGE_URL_WITH_CLASS_AND_CAPTION
+        @class   = $1
+        @url     = $3
+        @caption = $7
+      elsif markup =~ IMAGE_URL_WITH_CAPTION
+        @url     = $1
+        @caption = $5
+      elsif markup =~ IMAGE_URL_WITH_CLASS
+        @class = $1
+        @url   = $3
+      elsif markup =~ IMAGE_URL
+        @url = $1
+      end
+    end
+    def render(context)
+      if @class
+        source = &quot;&lt;figure class='#{@class}'&gt;&quot;
+      else
+        source = &quot;&lt;figure&gt;&quot;
+      end
+      if @link
+        source += &quot;&lt;a href=\&quot;#{@link}\&quot;&gt;&quot;
+      end
+      source += &quot;&lt;img src=\&quot;#{@url}\&quot;&gt;&quot;
+      if @link
+        source += &quot;&lt;/a&gt;&quot;
+      end
+      source += &quot;&lt;figcaption&gt;#{@caption}&lt;/figcaption&gt;&quot; if @caption
+      source += &quot;&lt;/figure&gt;&quot;
+      source
+    end
+  end
+end
+Liquid::Template.register_tag('image', Jekyll::ImageTag)
+</code></pre><p>is written as this Hugo shortcode:</p><pre><code>&lt;!-- image --&gt;
+&lt;figure {{ with .Get &quot;class&quot; }}class=&quot;{{.}}&quot;{{ end }}&gt;
+    {{ with .Get &quot;link&quot;}}&lt;a href=&quot;{{.}}&quot;&gt;{{ end }}
+        &lt;img src=&quot;{{ .Get &quot;src&quot; }}&quot; {{ if or (.Get &quot;alt&quot;) (.Get &quot;caption&quot;) }}alt=&quot;{{ with .Get &quot;alt&quot;}}{{.}}{{else}}{{ .Get &quot;caption&quot; }}{{ end }}&quot;{{ end }} /&gt;
+    {{ if .Get &quot;link&quot;}}&lt;/a&gt;{{ end }}
+    {{ if or (or (.Get &quot;title&quot;) (.Get &quot;caption&quot;)) (.Get &quot;attr&quot;)}}
+    &lt;figcaption&gt;{{ if isset .Params &quot;title&quot; }}
+        {{ .Get &quot;title&quot; }}{{ end }}
+        {{ if or (.Get &quot;caption&quot;) (.Get &quot;attr&quot;)}}&lt;p&gt;
+        {{ .Get &quot;caption&quot; }}
+        {{ with .Get &quot;attrlink&quot;}}&lt;a href=&quot;{{.}}&quot;&gt; {{ end }}
+            {{ .Get &quot;attr&quot; }}
+        {{ if .Get &quot;attrlink&quot;}}&lt;/a&gt; {{ end }}
+        &lt;/p&gt; {{ end }}
+    &lt;/figcaption&gt;
+    {{ end }}
+&lt;/figure&gt;
+&lt;!-- image --&gt;
+</code></pre><h3 id=usage>Usage</h3><p>I simply changed:</p><pre><code>{% image full http://farm5.staticflickr.com/4136/4829260124_57712e570a_o_d.jpg &quot;One of my favorite touristy-type photos. I secretly waited for the good light while we were &quot;having fun&quot; and took this. Only regret: a stupid pole in the top-left corner of the frame I had to clumsily get rid of at post-processing.&quot; -&gt;http://www.flickr.com/photos/alexnormand/4829260124/in/set-72157624547713078/ %}
+</code></pre><p>to this (this example uses a slightly extended version named <code>fig</code>, different than the built-in <code>figure</code>):</p><pre><code>{{% fig class=&quot;full&quot; src=&quot;http://farm5.staticflickr.com/4136/4829260124_57712e570a_o_d.jpg&quot; title=&quot;One of my favorite touristy-type photos. I secretly waited for the good light while we were having fun and took this. Only regret: a stupid pole in the top-left corner of the frame I had to clumsily get rid of at post-processing.&quot; link=&quot;http://www.flickr.com/photos/alexnormand/4829260124/in/set-72157624547713078/&quot; %}}
+</code></pre><p>As a bonus, the shortcode named parameters are, arguably, more readable.</p><h2 id=finishing-touches>Finishing touches</h2><h3 id=fix-content>Fix content</h3><p>Depending on the amount of customization that was done with each post with Jekyll, this step will require more or less effort. There are no hard and fast rules here except that <code>hugo server --watch</code> is your friend. Test your changes and fix errors as needed.</p><h3 id=clean-up>Clean up</h3><p>You&rsquo;ll want to remove the Jekyll configuration at this point. If you have anything else that isn&rsquo;t used, delete it.</p><h2 id=a-practical-example-in-a-diff>A practical example in a diff</h2><p><a href=http://heyitsalex.net/ target=_blank rel=noopener>Hey, it&rsquo;s Alex</a> was migrated in less than a <em>father-with-kids day</em> from Jekyll to Hugo. You can see all the changes (and screw-ups) by looking at this
+<a href=https://github.com/alexandre-normand/alexandre-normand/compare/869d69435bd2665c3fbf5b5c78d4c22759d7613a...b7f6605b1265e83b4b81495423294208cc74d610 target=_blank rel=noopener>diff</a>.</p></div><footer><p class=meta><span class="byline author vcard">Posted by <span class=fn>Brey</span></span>
+<time>Mar 10, 2014</time></span></p><p class=meta><a class="basic-alignment right" href=https://breylaude.com/blog/2014-04-02-test/ title=test>test</a></p><div id=disqus_thread></div><script>window.disqus_config=function(){},function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById("disqus_thread").innerHTML="Disqus comments not available by default when the website is previewed locally.";return}var t=document,e=t.createElement("script");e.async=!0,e.src="//breylaude.disqus.com/embed.js",e.setAttribute("data-timestamp",+new Date),(t.head||t.body).appendChild(e)}()</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></footer></article></div><aside class="sidebar thirds"><section class="first odd"><h1>Who am I?</h1><p><p>I am Brey, a Security Engineer.</p><p>I write about security research, dynamic programming, static analysis, and embedded systems.</p><p>The best way to reach me is via: laude(at)magicbroccoli.de<br><strong><a href=/pgp-key>pgp</a>: 11A2A675360B80A8</strong></p></p></section><ul class=sidebar-nav><li class=sidebar-nav-item><a target=_blank rel="noopener noreferrer" href=https://github.com/breylaude/ title=https://github.com/breylaude/><i class="fa fa-github fa-3x"></i></a>
+<a target=_blank rel="noopener noreferrer" href=https://x.com/breylaude title=https://x.com/breylaude><i class="fa fa-twitter fa-3x"></i></a>
+<a target=_blank rel="me noopener noreferrer" href=https://infosec.exchange/@breylaude title=https://infosec.exchange/@breylaude><i class="fa fa-mastodon fa-3x"></i></a>
+<a target=_blank rel="noopener noreferrer" href=https://keybase.io/brey title=https://keybase.io/brey><i class="fa fa-keybase fa-3x"></i></a></li></ul><section class=odd><h1>Collections</h1><li><a href=https://breylaude.com/categories title=Categories>Categories</a></li><li><a href=https://breylaude.com/about title=About>About</a></li><li><a href=https://laudetechnologies.com title="My Company">My Company</a></li></section><section class=even><h1>Recent Posts</h1><ul id=recent_posts><li class=post><a href=/blog/2024-08-17-real-programming-tutorial/>Real Programming - Tutorial</a></li><li class=post><a href=/blog/2024-05-04-quick-update/>Quick update</a></li><li class=post><a href=/blog/2024-04-29-may-can-officially-suck/>May can officially suck</a></li><li class=post><a href=/blog/2023-11-27-source-code-for-2020-subaru-head-units-and-other-core-functionality/>Source code for 2020+ Subaru head units and other core functionality</a></li><li class=post><a href=/blog/2023-09-15-overstimulation-rant/>Overstimulation rant</a></li><li class=post><a href=/blog/2023-05-27-styled-components/>styled-components</a></li><li class=post><a href=/blog/2023-04-12-normal-form-designators/>Normal Form Designators</a></li><li class=post><a href=/blog/2023-04-11-performance-testing-runs-too-short/>Performance testing runs too short</a></li><li class=post><a href=/blog/2022-03-12-computers/>Computers</a></li><li class=post><a href=/blog/2022-02-18-about-agile/>About Agile</a></li><li class=post><a href=/blog/2022-01-18-my-favorite-programming-pattern/>My favorite programming pattern</a></li><li class=post><a href=/blog/2021-04-12-help-wanted-programmer-for-startup/>Help wanted - Programmer for Startup</a></li><li class=post><a href=/blog/2021-02-14-shortcodes-in-action/>Shortcodes In Action</a></li><li class=post><a href=/blog/2020-01-07-limits-of-mathematics/>Limits of Mathematics</a></li></ul></section></aside></div></div><footer role=contentinfo><p>Copyright &copy; 2024 Brey - <a href=https://breylaude.com/license/>License</a> -
+<span class=credit>Powered by <a target=_blank href=https://gohugo.io rel="noopener noreferrer">Hugo</a> and <a target=_blank href=https://github.com/parsiya/hugo-octopress/ rel="noopener noreferrer">Hugo-Octopress</a> theme.</p></footer><script type=text/javascript>var _paq=_paq||[];_paq.push(["setDocumentTitle",document.domain+"/"+document.title]),_paq.push(["trackPageView"]),_paq.push(["enableLinkTracking"]),function(){t="//https://breylaude.piwik.pro/",_paq.push(["setTrackerUrl",t+"piwik.php"]),_paq.push(["setSiteId","78d080ef-e120-4064-87db-1cec10ac1ae6"]);var t,n=document,e=n.createElement("script"),s=n.getElementsByTagName("script")[0];e.type="text/javascript",e.async=!0,e.defer=!0,e.src=t+"piwik.js",s.parentNode.insertBefore(e,s)}()</script></body></html>

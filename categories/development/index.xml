@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Development on Brey Laude</title><link>https://breylaude.com/categories/development/</link><description>Recent content in Development on Brey Laude</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 05 Jun 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://breylaude.com/categories/development/index.xml" rel="self" type="application/rss+xml"/><item><title>Strange thing about Clang/GCC</title><link>https://breylaude.com/blog/2018-06-05-strange-thing-about-clang/gcc/</link><pubDate>Tue, 05 Jun 2018 00:00:00 +0000</pubDate><guid>https://breylaude.com/blog/2018-06-05-strange-thing-about-clang/gcc/</guid><description>&lt;p>Consider the following code:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-c" data-lang="c">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#include&lt;/span> &lt;span style="color:#75715e">&amp;lt;iostream&amp;gt;&lt;/span>&lt;span style="color:#75715e">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#include&lt;/span> &lt;span style="color:#75715e">&amp;lt;type_traits&amp;gt;&lt;/span>&lt;span style="color:#75715e">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// base template
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>template &lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">typename&lt;/span> T&lt;span style="color:#f92672">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">struct&lt;/span> what_type
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>{
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">operator&lt;/span>()()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cout &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> &lt;span style="color:#e6db74">&amp;#34;T&amp;#34;&lt;/span> &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> endl;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>};
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// specialization 1
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>template &lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">typename&lt;/span> T, &lt;span style="color:#66d9ef">size_t&lt;/span> N&lt;span style="color:#f92672">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">struct&lt;/span> what_type&lt;span style="color:#f92672">&amp;lt;&lt;/span>T[N]&lt;span style="color:#f92672">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>{
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">operator&lt;/span>()()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cout &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> &lt;span style="color:#e6db74">&amp;#34;T[&amp;#34;&lt;/span> &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> N &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> &lt;span style="color:#e6db74">&amp;#34;]&amp;#34;&lt;/span> &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> endl;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>};
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// specialization 2
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>template &lt;span style="color:#f92672">&amp;lt;&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">struct&lt;/span> what_type&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>[&lt;span style="color:#ae81ff">0&lt;/span>]&lt;span style="color:#f92672">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>{
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">operator&lt;/span>()()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cout &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> &lt;span style="color:#e6db74">&amp;#34;int[0]&amp;#34;&lt;/span> &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> endl;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>};
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">int&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>(&lt;span style="color:#66d9ef">void&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>{
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">int&lt;/span> x[] &lt;span style="color:#f92672">=&lt;/span> {};
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> what_type&lt;span style="color:#f92672">&amp;lt;&lt;/span>std&lt;span style="color:#f92672">::&lt;/span>&lt;span style="color:#66d9ef">remove_reference_t&lt;/span>&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#a6e22e">decltype&lt;/span>(x)&lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span>()();
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Difficulties with C++ Lambdas</title><link>https://breylaude.com/blog/2018-06-02-difficulties-with-c-lambdas/</link><pubDate>Sat, 02 Jun 2018 00:00:00 +0000</pubDate><guid>https://breylaude.com/blog/2018-06-02-difficulties-with-c-lambdas/</guid><description>&lt;p>C++ lambdas are wonderful for all sorts of reasons (especially with their C++14-and-beyond power). But I’ve run into a problem that I can’t think of a good way around yet.&lt;/p>
+&lt;p>If you are familiar with C++, you are aware of the importance of move semantics and rvalue references. Currently, a plethora of blog posts, conference videos, and even books explain how they operate, as well as how forwarding references (previously called universal references) combine with std::forward and templates to offer nice, optimal handling of objects with move semantics.&lt;/p></description></item><item><title>Recursive lambdas</title><link>https://breylaude.com/blog/2018-05-21-recursive-lambdas/</link><pubDate>Mon, 21 May 2018 00:00:00 +0000</pubDate><guid>https://breylaude.com/blog/2018-05-21-recursive-lambdas/</guid><description>&lt;p>One can assign a lambda to auto or to &lt;code>std::function&lt;/code>. Normally one would assign a lambda to auto to avoid possible unwanted allocation from &lt;code>std::function&lt;/code>. But if you want recursion, you need to be able to refer to the lambda variable inside the lambda, and you can’t do that if it’s assigned to auto. So how do you do recursive lambdas without using &lt;code>std::function&lt;/code>?&lt;/p>
+&lt;p>Use a fixed-point combinator (y-combinator) of course.&lt;/p></description></item><item><title>C++ Tuples missing functionality</title><link>https://breylaude.com/blog/2018-04-16-c-tuples-missing-functionality/</link><pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate><guid>https://breylaude.com/blog/2018-04-16-c-tuples-missing-functionality/</guid><description>&lt;p>C++ provides a strange mix of compile-time and runtime functionality for dealing with tuples. There are some interesting parts, like &lt;code>std::tie&lt;/code> to destructure a tuple, and &lt;code>std::tuple_cat&lt;/code> to join together several tuples into one.&lt;/p>
+&lt;p>So there is evidence that the standard has been influenced by some functional programming ideas, but I don’t think the full power of tuples has been realized (in both senses), and I found myself thinking about some missing parts.&lt;/p></description></item><item><title>Getting Started with Hugo</title><link>https://breylaude.com/blog/2014-04-02-getting-started-with-hugo/</link><pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate><guid>https://breylaude.com/blog/2014-04-02-getting-started-with-hugo/</guid><description>&lt;h2 id="step-1-install-hugo">Step 1. Install Hugo&lt;/h2>
+&lt;p>Goto 
+&lt;a href="https://github.com/spf13/hugo/releases" target="_blank" rel="noopener">hugo releases&lt;/a> and download the
+appropriate version for your os and architecture.&lt;/p>
+&lt;p>Save it somewhere specific as we will be using it in the next step.&lt;/p>
+&lt;p>More complete instructions are available at 
+&lt;a href="https://breylaude.com/overview/installing/">installing hugo&lt;/a>&lt;/p>
+&lt;h2 id="step-2-build-the-docs">Step 2. Build the Docs&lt;/h2>
+&lt;p>Hugo has its own example site which happens to also be the documentation site
+you are reading right now.&lt;/p>
+&lt;p>Follow the following steps:&lt;/p>
+&lt;ol>
+&lt;li>Clone the 
+&lt;a href="http://github.com/spf13/hugo" target="_blank" rel="noopener">hugo repository&lt;/a>&lt;/li>
+&lt;li>Go into the repo&lt;/li>
+&lt;li>Run hugo in server mode and build the docs&lt;/li>
+&lt;li>Open your browser to http://localhost:1313&lt;/li>
+&lt;/ol>
+&lt;p>Corresponding pseudo commands:&lt;/p></description></item><item><title>test</title><link>https://breylaude.com/blog/2014-04-02-test/</link><pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate><guid>https://breylaude.com/blog/2014-04-02-test/</guid><description>&lt;p>Hugo uses the excellent 
+&lt;a href="http://golang.org/" target="_blank" rel="noopener">go&lt;/a> 
+&lt;a href="http://golang.org/pkg/html/template/" target="_blank" rel="noopener">html/template&lt;/a> library for
+its template engine. It is an extremely lightweight engine that provides a very
+small amount of logic. In our experience that it is just the right amount of
+logic to be able to create a good static website. If you have used other
+template systems from different languages or frameworks you will find a lot of
+similarities in go templates.&lt;/p>
+&lt;p>This document is a brief primer on using go templates. The 
+&lt;a href="http://golang.org/pkg/html/template/" target="_blank" rel="noopener">go docs&lt;/a>
+provide more details.&lt;/p></description></item></channel></rss>
