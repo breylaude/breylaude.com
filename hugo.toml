@@ -1,0 +1,203 @@
+baseURL = 'https://breylaude.com/'
+languageCode = 'en-us'
+title = 'Brey Laude'
+theme = 'Hugo-Octopress'
+
+# Disqus shortcode
+# Disable comments for any individual post by adding "comments: false" in its frontmatter
+# Note it's been moved from `.site.disqusShortname` to `.Site.Config.Services.Disqus.Shortname`
+# and will be deprecated in 0.135.0. See https://gohugo.io/content-management/comments/#configure-disqus.
+# [services]
+#  [services.disqus]
+#    shortname = "Your disqus shortname"
+# the theme still supports the old usage but Hugo will complain after 0.135.0.
+ disqusShortname = "breylaude"
+
+# Number of blog posts in each pagination page
+paginate = 6
+
+[permalinks]
+post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the old ones
+
+[markup]
+  # Default is startLevel 2 and endLevel 3, we want to render every heading
+  [markup.tableOfContents]
+    endLevel = 8
+    startLevel = 1
+  # set the Chroma highlighting options
+  # https://gohugo.io/getting-started/configuration-markup/#highlight
+  [markup.highlight]
+    style = "monokai"
+  # if you want to keep using Blackfriday
+  # defaultMarkdownHandler = "blackfriday"
+  #   [markup.blackFriday]
+  #     hrefTargetBlank = true # open links in a new tab
+
+[params]
+
+  # --- Start sidebar options ---
+  # Number of last posts that will be displayed in the sidebar - set to 0 or remove to hide this section
+  sidebarRecentLimit = 15
+
+  # Sidebar header - passed to markdownify so you can write markdown here
+  sidebarHeader = "Who am I?"
+
+  # Sidebar text also supports markdown
+  # New lines can be added with two spaces at the end of line. New paragraphs can be added with two an empty line.
+  # when adding two new lines, remember to remove the indentation otherwise the new line will be treated as a codeblock
+  sidebarText = """I am Brey, a Security Engineer.
+
+  I write about security research, dynamic programming, static analysis, and embedded systems.
+
+  The best way to reach me is via: laude(at)magicbroccoli.de  
+  **[pgp](/pgp-key): 11A2A675360B80A8**
+  """
+  # Sidebar menu - if true will add a sidebar menu between sidebar text and recent posts
+  sidebarMenuEnabled = true
+  sidebarMenuHeader = "Collections"
+
+  # sidebar links
+  github = "https://github.com/breylaude/"
+  bitbucket = ""
+  twitter = "https://x.com/breylaude"
+  mastodon = "https://infosec.exchange/@breylaude"
+  keybase = "https://keybase.io/brey"
+  stackoverflow = ""
+  linkedin = ""
+  youtube = ""
+  facebook = ""
+  instagram = ""
+
+  # --- End sidebar options ---
+
+  # If set to true, navigation menu links will open in a new window with the exception of links to root ("/")
+  # If this item does not exist or set to false, then navigation menu links will open in the same window
+  navigationNewWindow = true
+
+  # If false, all of blog post will appear on front page (and in pagination)
+  truncate = true
+
+  # Author's name (appears in meta tags and under posts)
+  author = "Brey"
+
+  # This text appears in the site header under website title
+  subtitle = "docs"
+
+  # Search engine URL
+  searchEngineURL = "https://www.google.com/search"
+
+  # Text of the "Continue Reading" label. Supports markdown and inline HTML.
+  # For example, &rarr; == right arrow.
+  continueReadingText = "Read more &rarr;"
+
+  # Optional piwik tracking
+   [params.analytics.piwik]
+    URL = "https://breylaude.piwik.pro"
+    ID = "78d080ef-e120-4064-87db-1cec10ac1ae6"
+
+  # Switch to true to enable RSS icon link
+  rss = true
+
+  # Set to true to use a text label for RSS instead of an icon
+  # This is overwritten by the "rss" setting
+  textrss = false
+
+  # Website's default description
+  description = "Brey's blog"
+
+  # Populate this with your own search keywords - these will appear in the meta tags
+   defaultKeywords = ["brey" , "laude" , "brey laude" , "laude technologies"]
+
+  # CSS override files
+  # Paths should be relative to the `static` directory
+  # customCSS = ["css/custom.css","css/custom2.css"]
+
+  # 404.html header and text - both support markdown
+  notFoundHeader = "There's nothing here"
+
+  notFoundText = """Please either go back or use the navigation/sidebar menus.
+  """
+
+  # Set to true to hide ReadingTime on posts
+  disableReadingTime = false
+
+  # Set to true to disable downloading of remote Google fonts
+  disableGoogleFonts = false
+
+  # Remove or Set to false to use local fonts
+  # remoteFonts = false
+  
+  # Remove or set to false to use FontAwesome CDN, otherwise the theme uses ForkAwesome local fonts.
+  # fontAwesome = false
+
+  # Generate taxonomy pages
+  generateTaxonomyList = true
+
+  # Sort the taxonomy alphabetically.
+  # sortTaxonomyAlphabetical = true
+
+  # Twitter card config
+  # Enable with this.
+   twitterCardEnabled = true
+  # Don't include the @.
+  # twitterCardSite = 
+   twitterCardDomain = "breylaude.com"
+  # Don't include the @.
+   twitterCardAuthor = "breylaude"
+
+  # Set to true to enable compact index. Set to false or remove to go back to classic view.
+  # compactIndex = true
+
+  # Set mainSections.
+  # mainSections = ["post", "blog"]
+
+  # Site's custom favicon, this is a relative path to the `/static` directory
+   favicon = "favicon-16x16.png"
+
+# Google analytics code - remove if you do not have/want Google
+# Analytics - needs JavaScript.
+# googleAnalytics = "G-MEASUREMENT_ID"
+
+
+# Menu
+# If navigationNewWindow (under [params]) is set to true then all links except root ("/") will open in a new window
+# If it does not exist or is set to false then links will open in the same window
+[[menu.main]]
+  Name = "Home Page"
+  URL = "/"
+  weight = 1
+
+[[menu.main]]
+  Name = "My Leetcode"
+  URL = "https://leetcode.com/u/brlaude/"
+  weight = 2
+
+[[menu.main]]
+  Name = "This theme on Github"
+  URL = "https://www.github.com/parsiya/hugo-octopress"
+
+[[menu.main]]
+  Name = "About"
+  URL = "/about"
+
+[[menu.main]]  
+  Name = "Bug bounty"
+  URL = "/bug-bounty"
+
+# Sidebar menus
+# Enable with "sidebarMenuEnabled = true" under [params]
+# Header text is "sidebarMenuHeader" under [params]
+[[menu.sidebar]]
+  Name = "My Company"
+  URL = "https://laudetechnologies.com"
+  weight = 0
+
+[[menu.sidebar]]
+  Name = "Categories"
+  URL = "/categories"
+  weight = 1
+
+[[menu.sidebar]]
+  Name = "About"
+  URL = "/about"
+  weight = 2

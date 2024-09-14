@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Algorithm on Brey Laude</title>
+    <link>http://localhost:1313/categories/algorithm/</link>
+    <description>Recent content in Algorithm on Brey Laude</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 04 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/algorithm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kruskal Greedy algorithm for Minimum spanning tree</title>
+      <link>http://localhost:1313/blog/2019-06-04-kruskal-greedy-algorithm-for-minimum-spanning-tree/</link>
+      <pubDate>Tue, 04 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2019-06-04-kruskal-greedy-algorithm-for-minimum-spanning-tree/</guid>
+      <description>The code that follows was written before. To do it, I created a straightforward linked list + insert using a queued linked list and then sorting it was my original plan, but it proved to be too complicated.&#xA;Simply insert the sort so that the tail is very slight. It serves no purpose and, when used in the tree list, appears more NC. Actually, it is better to use heap or qsort after all input has been received, and to dynamically allocate enough space based on the input n.</description>
+    </item>
+  </channel>
+</rss>

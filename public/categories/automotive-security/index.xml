@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Automotive Security on Brey Laude</title>
+    <link>http://localhost:1313/categories/automotive-security/</link>
+    <description>Recent content in Automotive Security on Brey Laude</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 27 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/automotive-security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Source code for 2020&#43; Subaru head units and other core functionality</title>
+      <link>http://localhost:1313/blog/2023-11-27-source-code-for-2020-subaru-head-units-and-other-core-functionality/</link>
+      <pubDate>Mon, 27 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2023-11-27-source-code-for-2020-subaru-head-units-and-other-core-functionality/</guid>
+      <description>Many modules written and others since other car manufacturers share the same code base. You can also find Toyota version as well.&#xA;I found it a year ago, made minor modifications and compiled successfully. However, to get it deployed is another large task which I didn’t follow through with, there are probably people who have done so already, I am not sure.&#xA;Send me an email if you do. Cheers!</description>
+    </item>
+  </channel>
+</rss>

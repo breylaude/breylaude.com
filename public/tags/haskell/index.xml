@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Haskell on Brey Laude</title>
+    <link>http://localhost:1313/tags/haskell/</link>
+    <description>Recent content in Haskell on Brey Laude</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 18 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/haskell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My favorite programming pattern</title>
+      <link>http://localhost:1313/blog/2022-01-18-my-favorite-programming-pattern/</link>
+      <pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2022-01-18-my-favorite-programming-pattern/</guid>
+      <description>So at work we were talking about interviewer questions for graduates, and one of them was the standard simple test to weed out graduates who faked it till they made it. it went something like this:&#xA;You are given a list of characters, please return the list with commas seperating each element. do not leave a trailing comma.&#xA;There may have been language restrictions or something, honestly I wasn&amp;rsquo;t paying a huge amount of attention, but it got me thinking about my honest answer to that, and here is what I came up with.</description>
+    </item>
+  </channel>
+</rss>

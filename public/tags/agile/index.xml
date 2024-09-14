@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Agile on Brey Laude</title>
+    <link>http://localhost:1313/tags/agile/</link>
+    <description>Recent content in Agile on Brey Laude</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 18 Feb 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/agile/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About Agile</title>
+      <link>http://localhost:1313/blog/2022-02-18-about-agile/</link>
+      <pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2022-02-18-about-agile/</guid>
+      <description>A friend of mine we often talk about software design. He&amp;rsquo;s skeptic about Agile Software Design, calling it “software design by trial and error”.&#xA;I share his criticism.&#xA;Yesterday I took a two-hour LinkedIn Learning class on Agile Software Design. It was an introduction only. My first impression is that Agile is, at one level, moving a to-do list of sticky notes around on a bulletin board, assigning programming tasks to the programming team with verbal instructions and discussion about how to program something.</description>
+    </item>
+  </channel>
+</rss>

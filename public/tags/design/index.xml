@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Design on Brey Laude</title>
+    <link>http://localhost:1313/tags/design/</link>
+    <description>Recent content in Design on Brey Laude</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 27 May 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/design/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>styled-components</title>
+      <link>http://localhost:1313/blog/2023-05-27-styled-components/</link>
+      <pubDate>Sat, 27 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2023-05-27-styled-components/</guid>
+      <description>This current trend in the web development industry, is probably familiar to you.&#xA;But pardon my skepticism, because I can’t help but wonder, is it really THAT groundbreaking?&#xA;The core idea behind Styled Components is to remove the ‘cascade’ from CSS.&#xA;And I know, cascading styles can be a headache. But, does eradicating this cascade lead to better, more maintainable designs? Fucking color me skeptical.</description>
+    </item>
+  </channel>
+</rss>

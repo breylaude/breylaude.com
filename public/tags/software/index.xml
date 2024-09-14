@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software on Brey Laude</title>
+    <link>http://localhost:1313/tags/software/</link>
+    <description>Recent content in Software on Brey Laude</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 11 Apr 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Performance testing runs too short</title>
+      <link>http://localhost:1313/blog/2023-04-11-performance-testing-runs-too-short/</link>
+      <pubDate>Tue, 11 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2023-04-11-performance-testing-runs-too-short/</guid>
+      <description>You’ll probably notice that performance testing costs a lot of time to run one case. Moreover, it carries the risk of failing the execution itself.&#xA;Furthermore, fixes to eliminate bottlenecks found in performance testing are often far more expensive than functional fixes.&#xA;I don’t know if it’s because there are few people who know this reality, or because the emphasis is on functionality, but in most cases, the performance test period is quite short.</description>
+    </item>
+    <item>
+      <title>About Agile</title>
+      <link>http://localhost:1313/blog/2022-02-18-about-agile/</link>
+      <pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2022-02-18-about-agile/</guid>
+      <description>A friend of mine we often talk about software design. He&amp;rsquo;s skeptic about Agile Software Design, calling it “software design by trial and error”.&#xA;I share his criticism.&#xA;Yesterday I took a two-hour LinkedIn Learning class on Agile Software Design. It was an introduction only. My first impression is that Agile is, at one level, moving a to-do list of sticky notes around on a bulletin board, assigning programming tasks to the programming team with verbal instructions and discussion about how to program something.</description>
+    </item>
+  </channel>
+</rss>

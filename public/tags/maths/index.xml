@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Maths on Brey Laude</title>
+    <link>http://localhost:1313/tags/maths/</link>
+    <description>Recent content in Maths on Brey Laude</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 07 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/maths/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Limits of Mathematics</title>
+      <link>http://localhost:1313/blog/2020-01-07-limits-of-mathematics/</link>
+      <pubDate>Tue, 07 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2020-01-07-limits-of-mathematics/</guid>
+      <description>In order for any complexity to arise in any system there simply must exist fundamental relationships. Mathematics is, of course, the language of relationships. The complexity of our universe necessarily arises out of mathematical relationships, however our universe is comprised of more than relationships; its structure extends beyond the realms of math.&#xA;The Copenhagen Interpretation of Quantum Mechanics, Holographic Universe principals, and all other notions akin to “all properties of the universe are mathematical in nature” display profound misunderstandings about the capacity and nature of mathematics, as well as its relationship to physics.</description>
+    </item>
+  </channel>
+</rss>

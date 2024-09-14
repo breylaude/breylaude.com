@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Thoughts on Brey Laude</title>
+    <link>http://localhost:1313/categories/thoughts/</link>
+    <description>Recent content in Thoughts on Brey Laude</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 12 Mar 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Computers</title>
+      <link>http://localhost:1313/blog/2022-03-12-computers/</link>
+      <pubDate>Sat, 12 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2022-03-12-computers/</guid>
+      <description>I do not step shyly back from your stack, but look upon it always as my stack, in which I respect nothing.&#xA;Where did we go wrong? Accidentally discovering and rediscovering the joy of computing, and ending up with what we have, instead?&#xA;All tech stacks and standards are spooks in the spookiest sense of the word, and any grand idea of what a computer aught to be is inseparable from the ramblings of a god-fearing human, or an appeal to societal norm, or the allure of the athiest god in scientus</description>
+    </item>
+    <item>
+      <title>About Agile</title>
+      <link>http://localhost:1313/blog/2022-02-18-about-agile/</link>
+      <pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2022-02-18-about-agile/</guid>
+      <description>A friend of mine we often talk about software design. He&amp;rsquo;s skeptic about Agile Software Design, calling it “software design by trial and error”.&#xA;I share his criticism.&#xA;Yesterday I took a two-hour LinkedIn Learning class on Agile Software Design. It was an introduction only. My first impression is that Agile is, at one level, moving a to-do list of sticky notes around on a bulletin board, assigning programming tasks to the programming team with verbal instructions and discussion about how to program something.</description>
+    </item>
+    <item>
+      <title>My favorite programming pattern</title>
+      <link>http://localhost:1313/blog/2022-01-18-my-favorite-programming-pattern/</link>
+      <pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2022-01-18-my-favorite-programming-pattern/</guid>
+      <description>So at work we were talking about interviewer questions for graduates, and one of them was the standard simple test to weed out graduates who faked it till they made it. it went something like this:&#xA;You are given a list of characters, please return the list with commas seperating each element. do not leave a trailing comma.&#xA;There may have been language restrictions or something, honestly I wasn&amp;rsquo;t paying a huge amount of attention, but it got me thinking about my honest answer to that, and here is what I came up with.</description>
+    </item>
+    <item>
+      <title>Limits of Mathematics</title>
+      <link>http://localhost:1313/blog/2020-01-07-limits-of-mathematics/</link>
+      <pubDate>Tue, 07 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/2020-01-07-limits-of-mathematics/</guid>
+      <description>In order for any complexity to arise in any system there simply must exist fundamental relationships. Mathematics is, of course, the language of relationships. The complexity of our universe necessarily arises out of mathematical relationships, however our universe is comprised of more than relationships; its structure extends beyond the realms of math.&#xA;The Copenhagen Interpretation of Quantum Mechanics, Holographic Universe principals, and all other notions akin to “all properties of the universe are mathematical in nature” display profound misunderstandings about the capacity and nature of mathematics, as well as its relationship to physics.</description>
+    </item>
+  </channel>
+</rss>

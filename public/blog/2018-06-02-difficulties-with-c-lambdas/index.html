@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  
+  <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+
+  
+    
+    
+      <link href="/css/fonts.css" rel="stylesheet" type="text/css">
+    
+  
+
+  
+  <title>Difficulties with C&#43;&#43; Lambdas</title>
+
+  
+  
+  <link rel="stylesheet" href="/css/hugo-octopress.css">
+
+  
+  
+
+  
+    <link rel="stylesheet" href="/css/fork-awesome.min.css">
+  
+
+  
+  
+    <link href="http://localhost:1313/favicon.png" rel="icon">
+  
+
+  
+  
+
+  <meta name="description" content="" />
+  <meta name="keywords" content="">
+  <meta name="author" content="Brey">
+
+  
+  <meta name="generator" content="Hugo 0.130.0">
+
+  
+  
+
+  
+  
+
+
+
+</head>
+<body>
+
+
+<header role="banner">
+<hgroup>
+  
+  <h1><a href="http://localhost:1313/">Brey Laude</a></h1>
+    <h2>docs</h2>
+</hgroup></header>
+
+
+<nav role="navigation">
+<fieldset class="mobile-nav">
+  
+  <select onchange="location = this.value;">
+    <option value="">Navigate…</option>
+      
+        <option value="http://localhost:1313/">» Home Page</option>
+      
+        <option value="https://leetcode.com/u/brlaude/">» My Leetcode</option>
+      
+        <option value="http://localhost:1313/about">» About</option>
+      
+        <option value="http://localhost:1313/bug-bounty">» Bug bounty</option>
+      
+        <option value="https://www.github.com/parsiya/hugo-octopress">» This theme on Github</option>
+      
+  </select>
+</fieldset>
+
+
+<ul class="main-navigation">
+  
+  
+    
+      <li><a href="http://localhost:1313/" title="Home Page">Home Page</a></li>
+    
+  
+    
+      <li><a href="https://leetcode.com/u/brlaude/" title="My Leetcode"  target="_blank"  rel="noopener noreferrer">My Leetcode</a></li>
+    
+  
+    
+      <li><a href="http://localhost:1313/about" title="About"  target="_blank"  rel="noopener noreferrer">About</a></li>
+    
+  
+    
+      <li><a href="http://localhost:1313/bug-bounty" title="Bug bounty"  target="_blank"  rel="noopener noreferrer">Bug bounty</a></li>
+    
+  
+    
+      <li><a href="https://www.github.com/parsiya/hugo-octopress" title="This theme on Github"  target="_blank"  rel="noopener noreferrer">This theme on Github</a></li>
+    
+  
+</ul>
+
+<ul class="subscription">
+  
+</ul>
+
+
+  <form action="https://www.google.com/search" method="get" target="_blank" rel="noopener noreferrer">
+    <fieldset role="search">
+      <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+      <input type="hidden" name="q" value="site:http://localhost:1313/" />
+    </fieldset>
+  </form>
+
+</nav>
+
+
+<div id="main">
+  <div id="content">
+    <div>
+      <article class="hentry" role="article">
+
+        
+        
+
+<header>
+  <p class="meta">Jun 2, 2018
+     - 3 minute read 
+     - <a href="http://localhost:1313/blog/2018-06-02-difficulties-with-c-lambdas/#disqus_thread">Comments</a>
+
+    
+    
+      - <a class="label" href="http://localhost:1313/categories/c&#43;&#43;/">c&#43;&#43; </a><a class="label" href="http://localhost:1313/categories/development/">development </a>
+    
+  </p>
+  <h1 class="entry-title">
+     Difficulties with C&#43;&#43; Lambdas 
+  </h1>
+</header>
+
+
+        <div class="entry-content">
+          
+          
+          
+          <p>C++ lambdas are wonderful for all sorts of reasons (especially with their C++14-and-beyond power). But I’ve run into a problem that I can’t think of a good way around yet.</p>
+<p>If you are familiar with C++, you are aware of the importance of move semantics and rvalue references. Currently, a plethora of blog posts, conference videos, and even books explain how they operate, as well as how forwarding references (previously called universal references) combine with std::forward and templates to offer nice, optimal handling of objects with move semantics.</p>
+<p>A further piece of the move-semantic completeness puzzle was added in C++14 with the introduction of generalized lambda capture, which allows lambda captures to be handled with move semantics.</p>
+<p>The fact that reference qualifiers can be used in class member functions is another little-known but crucial detail of the overall picture. This is covered in section 9.3.1 [class.mfct.non-static] of the standard.</p>
+<p>This implies that member functions can be overload with <code>&amp;</code> or<code> &amp;&amp;</code> modifiers, and they will be called based on the value category of this, just like when we write member functions with const modifiers. Thus, you are aware of when it is safe to call <code>std::move</code> on data members.</p>
+<p>Now, lambdas are conceptually like anonymous classes where the body is the <code>operator()</code> and the captured variables are the data members. And we can write lambdas with a mutable modifier indicating that the data members are mutable. (By far the common case is for them to be const, so the ordinary usage of const on a member function is inverted for lambdas.)</p>
+<p>I said conceptually because it turns out they aren’t completely like that in at least one important way: lambdas can’t have reference qualifiers. Maybe for good reason – how would the compiler implement that? How would the programmer who wanted that behaviour specify the overloads he’s wanting? These are tricky questions to answer well.</p>
+<p>But it is a problem – as far as I can tell so far, there is no way to know, inside a lambda, what the value category of the lambda object is. So the performance promise of the move semantic model falls down in the face of safety concerns: I don’t know whether I can safely move from a captured variable inside a lambda.</p>
+<p>If anyone has any ideas about this, please let me know. Google and StackOverflow can tell me all about how move captures work with lambdas, but nothing about how to move things out of lambdas safely, or divine the value category of a lambda object.</p>
+<p>All the things I’ve tried have either not worked, or have resulted in suboptimalities of various kinds. (And frankly, if anything had worked, at this point I’d put it down to a compiler quirk and not to be relied on.)</p>
+<p>As far as I can tell, it’s a definite shortcoming of C++ that there’s no way to do this in a compile-time, type-inferred, lambda-land way.</p>
+<p>I don’t see this in the core language issues – is it a known problem, or is there a known way to solve it that I don’t know yet?</p>
+
+        </div>
+        
+
+<footer>
+  <p class="meta">
+    <span class="byline author vcard">Posted by <span class="fn">Brey</span></span>
+    
+    <time>Jun 2, 2018</time>
+    
+      <span class="categories">
+        Tags:
+        
+          <a class="category" href="http://localhost:1313/tags/c&#43;&#43;">c&#43;&#43;</a>  <a class="category" href="http://localhost:1313/tags/lambdas">lambdas</a>  <a class="category" href="http://localhost:1313/tags/development">development</a>  
+    
+    </span>
+  </p>
+
+  
+
+  <p class="meta">
+    
+        <a class="basic-alignment left" href="http://localhost:1313/blog/2018-05-21-recursive-lambdas/" title="Recursive lambdas">Recursive lambdas</a>
+    
+
+    
+      <a class="basic-alignment right" href="http://localhost:1313/blog/2018-06-05-strange-thing-about-clang/gcc/" title="Strange thing about Clang/GCC">Strange thing about Clang/GCC</a>
+    
+  </p>
+  
+    
+      <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "breylaude" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+  
+</footer>
+
+
+      </article>
+    </div>
+    
+
+<aside class="sidebar thirds">
+  <section class="first odd">
+
+    
+      <h1>Who am I?</h1>
+    
+
+    <p>
+      
+        <p>I am Brey, a Security Engineer.</p>
+<p>I write about security research, dynamic programming, static analysis, and embedded systems.</p>
+<p>The best way to reach me is via: laude(at)magicbroccoli.de<br>
+<strong>
+<a href="/pgp-key">pgp</a>: 11A2A675360B80A8</strong></p>
+
+      
+    </p>
+  </section>
+
+  
+  
+
+
+
+<ul class="sidebar-nav">
+  <li class="sidebar-nav-item">
+    <a target="_blank" rel="noopener noreferrer" href="https://github.com/breylaude/" title="https://github.com/breylaude/"><i class="fa fa-github fa-3x"></i></a>
+    
+    
+    <a target="_blank" rel="noopener noreferrer" href="https://x.com/breylaude" title="https://x.com/breylaude"><i class="fa fa-twitter fa-3x"></i></a>
+    <a target="_blank" rel="me noopener noreferrer" href="https://infosec.exchange/@breylaude" title="https://infosec.exchange/@breylaude"><i class="fa fa-mastodon fa-3x"></i></a>
+    <a target="_blank" rel="noopener noreferrer" href="https://keybase.io/brey" title="https://keybase.io/brey"><i class="fa fa-keybase fa-3x"></i></a>
+    
+    
+    
+    
+    
+    
+
+  
+  
+  </li>
+</ul>
+
+  
+
+  
+    
+      <section class="odd">
+        
+          <h1>Collections</h1>
+        
+        
+          <li>
+            <a href="http://localhost:1313/categories" title="Categories" >Categories</a>
+          </li>
+        
+          <li>
+            <a href="http://localhost:1313/about" title="About" >About</a>
+          </li>
+        
+          <li>
+            <a href="https://laudetechnologies.com" title="My Company" >My Company</a>
+          </li>
+        
+      </section>
+    
+  
+
+  
+  
+  
+    
+      <section class="even">
+        <h1>Recent Posts</h1>
+        <ul id="recent_posts">
+          
+          
+            
+          
+            
+              <li class="post">
+                <a href="/blog/2024-08-17-real-programming-tutorial/">Real Programming - Tutorial</a>
+              </li>
+            
+          
+            
+              <li class="post">
+                <a href="/blog/2024-05-04-quick-update/">Quick update</a>
+              </li>
+            
+          
+            
+              <li class="post">
+                <a href="/blog/2024-04-29-may-can-officially-suck/">May can officially suck</a>
+              </li>
+            
+          
+            
+              <li class="post">
+                <a href="/blog/2023-11-27-source-code-for-2020-subaru-head-units-and-other-core-functionality/">Source code for 2020&#43; Subaru head units and other core functionality</a>
+              </li>
+            
+          
+            
+              <li class="post">
+                <a href="/blog/2023-09-15-overstimulation-rant/">Overstimulation rant</a>
+              </li>
+            
+          
+            
+              <li class="post">
+                <a href="/blog/2023-05-27-styled-components/">styled-components</a>
+              </li>
+            
+          
+            
+              <li class="post">
+                <a href="/blog/2023-04-12-normal-form-designators/">Normal Form Designators</a>
+              </li>
+            
+          
+            
+              <li class="post">
+                <a href="/blog/2023-04-11-performance-testing-runs-too-short/">Performance testing runs too short</a>
+              </li>
+            
+          
+            
+              <li class="post">
+                <a href="/blog/2022-03-12-computers/">Computers</a>
+              </li>
+            
+          
+            
+              <li class="post">
+                <a href="/blog/2022-02-18-about-agile/">About Agile</a>
+              </li>
+            
+          
+            
+              <li class="post">
+                <a href="/blog/2022-01-18-my-favorite-programming-pattern/">My favorite programming pattern</a>
+              </li>
+            
+          
+            
+              <li class="post">
+                <a href="/blog/2021-04-12-help-wanted-programmer-for-startup/">Help wanted - Programmer for Startup</a>
+              </li>
+            
+          
+            
+              <li class="post">
+                <a href="/blog/2021-02-14-shortcodes-in-action/">Shortcodes In Action</a>
+              </li>
+            
+          
+            
+              <li class="post">
+                <a href="/blog/2020-01-07-limits-of-mathematics/">Limits of Mathematics</a>
+              </li>
+            
+          
+        </ul>
+      </section>
+    
+  
+</aside>
+
+  </div>
+</div>
+
+    <footer role="contentinfo">
+      <p>Copyright &copy; 2024 Brey - <a href="http://localhost:1313/license/">License</a> -
+        <span class="credit">Powered by <a target="_blank" href="https://gohugo.io" rel="noopener noreferrer">Hugo</a> and <a target="_blank" href="https://github.com/parsiya/hugo-octopress/" rel="noopener noreferrer">Hugo-Octopress</a> theme.
+      </p>
+    </footer>
+
+    
+    
+
+
+
+    
+    
+      <script type="text/javascript">
+        var _paq = _paq || [];
+         
+        _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+          var u="//https:\/\/breylaude.piwik.pro/";
+          _paq.push(['setTrackerUrl', u+'piwik.php']);
+          _paq.push(['setSiteId', "78d080ef-e120-4064-87db-1cec10ac1ae6"]);
+          var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+          g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+        })();
+      </script>
+    
+    
+
+    
+  
+
+
+  </body>
+</html>
+

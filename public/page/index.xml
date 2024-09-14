@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on Brey Laude</title>
+    <link>http://localhost:1313/page/</link>
+    <description>Recent content in Pages on Brey Laude</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 17 Feb 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/page/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bug bounty</title>
+      <link>http://localhost:1313/bug-bounty/</link>
+      <pubDate>Fri, 17 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/bug-bounty/</guid>
+      <description>This is where I (hopefully) collect all my disclosed security issues.</description>
+    </item>
+    <item>
+      <title>PGP</title>
+      <link>http://localhost:1313/pgp-key/</link>
+      <pubDate>Tue, 14 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pgp-key/</guid>
+      <description>-----BEGIN PGP PUBLIC KEY BLOCK----- Version: Keybase Go 6.3.1 (linux) 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 AhGTSr17e4Q6Y64W/F37g72yHmA= =RHP6 -----END PGP PUBLIC KEY BLOCK----- Valid from now until forever&#xA;Retired Keys 90B6 4459 F5F3 7E5B Valid from: 10.</description>
+    </item>
+    <item>
+      <title>Single Page</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Sun, 14 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>This is a single page. To create a page similar to this:&#xA;Create a new markdown file in contents/page/about.md. Alternatively, create a page bundle contents/page/about/index.md. In the frontmatter of the page, set the value of url to your desired relative path. E.g., for this page we have url = &amp;quot;/about/&amp;quot;. Now you can access the website at baseurl/about and you can link to it from the main menu or sidebar using the relative path.</description>
+    </item>
+  </channel>
+</rss>
