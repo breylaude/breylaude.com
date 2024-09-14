@@ -114,18 +114,18 @@
       <description>Are you a good programmer? Willing to join a small startup? Think you can get along with me?&#xA;We&amp;rsquo;re looking people to our startup if it gets funded, possibly as a co-founder.&#xA;We&amp;rsquo;re building something great!&#xA;Email me: startup@breylaude.com</description>
     </item>
     <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Sun, 14 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>Hi,&#xA;I programmed and designed this website and it’s additional applications solely to document my knowledge about dynamic programming, microcontrollers, security research, projects, so on - culminated in the main section of this website.&#xA;Disclaimer: I’m not a big fan of frameworks, over-designing, 13 megabyte parallax-ative homepage, and 40-pound jQuery file and 83 polyfills (not used on this website) but after dealing with a lot of people complaining about some of my websites saying that “they look like I just finished learning HTML” because I don’t use heavy frameworks like they do, I will make sure that this website loads fast, lightweight, and still legible and gets the point across even when it looks like it’s not.</description>
+    </item>
+    <item>
       <title>Shortcodes In Action</title>
       <link>http://localhost:1313/blog/2021-02-14-shortcodes-in-action/</link>
       <pubDate>Sun, 14 Feb 2021 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/blog/2021-02-14-shortcodes-in-action/</guid>
       <description>&lt;p&gt;The theme&amp;rsquo;s short codes in action. See my shortcode repository at&#xA;&#xA;&lt;a href=&#34;https://github.com/parsiya/Hugo-Shortcodes&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/parsiya/Hugo-Shortcodes&lt;/a&gt; for more.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Single Page</title>
-      <link>http://localhost:1313/about/</link>
-      <pubDate>Sun, 14 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
-      <description>This is a single page. To create a page similar to this:&#xA;Create a new markdown file in contents/page/about.md. Alternatively, create a page bundle contents/page/about/index.md. In the frontmatter of the page, set the value of url to your desired relative path. E.g., for this page we have url = &amp;quot;/about/&amp;quot;. Now you can access the website at baseurl/about and you can link to it from the main menu or sidebar using the relative path.</description>
     </item>
     <item>
       <title>Limits of Mathematics</title>

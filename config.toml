@@ -156,7 +156,7 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
 
 # Google analytics code - remove if you do not have/want Google
 # Analytics - needs JavaScript.
-# googleAnalytics = "G-MEASUREMENT_ID"
+ googleAnalytics = "G-00TLMEWMYQ"
 
 
 # Menu
