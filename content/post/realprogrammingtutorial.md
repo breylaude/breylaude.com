@@ -1,5 +1,5 @@
 +++
-title = "Real Programming - Tutorial"
+title = "Real programming tutorial"
 description = ""
 tags = [
     "programming",
