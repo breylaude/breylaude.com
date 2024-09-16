@@ -45,7 +45,7 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
   # Sidebar text also supports markdown
   # New lines can be added with two spaces at the end of line. New paragraphs can be added with two an empty line.
   # when adding two new lines, remember to remove the indentation otherwise the new line will be treated as a codeblock
-  sidebarText = """I am Brey, a Programmer and a Security Engineer.
+  sidebarText = """I am Brey, a Programmer and an Application Security Engineer.
 
   I write about security research, softwares, dynamic programming, static analysis, and embedded systems.
 
