@@ -181,7 +181,11 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
   URL = "/about"
 
 [[menu.main]]  
-  Name = "Bug bounty"
+  Name = "Logs"
+  URL = "/log"
+
+[[menu.main]]  
+  Name = "Bug Bounty"
   URL = "/bug-bounty"
 
 # Sidebar menus
