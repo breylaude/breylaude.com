@@ -173,8 +173,8 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
   weight = 2
 
 [[menu.main]]
-  Name = "This theme on Github"
-  URL = "https://www.github.com/parsiya/hugo-octopress"
+  Name = "Site's Source on Github"
+  URL = "https://www.github.com/breylaude/breylaude.com"
 
 [[menu.main]]
   Name = "About"
