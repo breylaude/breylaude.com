@@ -1,6 +1,6 @@
 baseURL = 'https://breylaude.com/'
 languageCode = 'en-us'
-title = 'Brey Laude'
+title = 'breylaude.com'
 theme = 'Hugo-Octopress'
 
 # Disqus shortcode
@@ -45,12 +45,13 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
   # Sidebar text also supports markdown
   # New lines can be added with two spaces at the end of line. New paragraphs can be added with two an empty line.
   # when adding two new lines, remember to remove the indentation otherwise the new line will be treated as a codeblock
-  sidebarText = """I am Brey, a Programmer and an Application Security Engineer.
+  sidebarText = """I am Brey, a Programmer.
 
   I write about security research, softwares, dynamic programming, static analysis, and embedded systems.
 
   The best way to reach me is via: laude(at)magicbroccoli.de  
   **[pgp](/pgp-key): 11A2A675360B80A8**
+  
   """
   # Sidebar menu - if true will add a sidebar menu between sidebar text and recent posts
   sidebarMenuEnabled = true
@@ -100,10 +101,10 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
 
   # Set to true to use a text label for RSS instead of an icon
   # This is overwritten by the "rss" setting
-  textrss = false
+  # textrss = false
 
   # Website's default description
-  description = "Brey's blog"
+  description = "Brey's Weblog"
 
   # Populate this with your own search keywords - these will appear in the meta tags
    defaultKeywords = ["brey" , "laude" , "brey laude" , "laude technologies"]
