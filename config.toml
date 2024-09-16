@@ -40,16 +40,17 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
   sidebarRecentLimit = 15
 
   # Sidebar header - passed to markdownify so you can write markdown here
-  sidebarHeader = "Who am I?"
+  sidebarHeader = "Who Am I?"
 
   # Sidebar text also supports markdown
   # New lines can be added with two spaces at the end of line. New paragraphs can be added with two an empty line.
   # when adding two new lines, remember to remove the indentation otherwise the new line will be treated as a codeblock
-  sidebarText = """I am Brey, a Programmer.
+  sidebarText = """I'm Brey, a Programmer.
 
-  I write about security research, softwares, dynamic programming, static analysis, and embedded systems.
+  [Read More](/about)
 
   The best way to reach me is via: laude(at)magicbroccoli.de  
+  
   **[pgp](/pgp-key): 11A2A675360B80A8**
   
   """
@@ -82,7 +83,7 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
   author = "Brey"
 
   # This text appears in the site header under website title
-  subtitle = "Doing things for the computer"
+  subtitle = "Embedded Systems, C/C++, RTOS, Linux and Security"
 
   # Search engine URL
   searchEngineURL = "https://www.google.com/search"
@@ -193,7 +194,7 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
 # Enable with "sidebarMenuEnabled = true" under [params]
 # Header text is "sidebarMenuHeader" under [params]
 [[menu.sidebar]]
-  Name = "My Company"
+  Name = "Laude Technologies' Website"
   URL = "https://laudetechnologies.com"
   weight = 0
 
