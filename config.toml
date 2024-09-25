@@ -51,7 +51,7 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
 
   The best way to reach me is via: laude(at)magicbroccoli.de  
   
-  **[pgp](/pgp-key): 11A2A675360B80A8**
+  **GPG key: 11A2 A675 360B 80A8**
   
   """
   # Sidebar menu - if true will add a sidebar menu between sidebar text and recent posts
