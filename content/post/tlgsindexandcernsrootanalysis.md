@@ -1,5 +1,5 @@
 +++
-title = "Some boring analysis on TLGS index and messing with CERNs ROOT Analysis framework"
+title = "Some boring analysis on TLGS index (and messing with CERNs ROOT Analysis framework)"
 description = ""
 tags = [
     "",
