@@ -140,12 +140,12 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
 
   # Twitter card config
   # Enable with this.
-   twitterCardEnabled = true
+  # twitterCardEnabled = true
   # Don't include the @.
   # twitterCardSite = 
-   twitterCardDomain = "breylaude.com"
+  # twitterCardDomain = "breylaude.com"
   # Don't include the @.
-   twitterCardAuthor = "breylaude"
+  # twitterCardAuthor = "breylaude"
 
   # Set to true to enable compact index. Set to false or remove to go back to classic view.
    compactIndex = true
