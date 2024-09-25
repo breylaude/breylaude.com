@@ -170,8 +170,8 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
   weight = 1
 
 [[menu.main]]
-  Name = "My Leetcode"
-  URL = "https://leetcode.com/u/brlaude/"
+  Name = "Security"
+  URL = "/security"
   weight = 2
 
 [[menu.main]]
