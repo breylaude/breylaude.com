@@ -148,7 +148,7 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
    twitterCardAuthor = "breylaude"
 
   # Set to true to enable compact index. Set to false or remove to go back to classic view.
-  # compactIndex = true
+   compactIndex = true
 
   # Set mainSections.
   # mainSections = ["post", "blog"]
