@@ -108,6 +108,8 @@ root [6] root [6] *rdf.Count() - *f1.Count()
 
 In all of TLGS’ index. There are only 1550 pages larger than 20K. And the distribution looks like the following. Nice! Looks like most pages are quite small. And 5K is a good cutoff.
 
+![The size distribution of text/gemini responses](/images/tlgs1.png)
+
 One question you may ask. Larger files tend to contain more information. Which makes it easier to be searched. Could we compensate for this? Yes! The data looks log-normal. Seems the Landau distribution will work. Assuming the number of tokens is correlated to the size of the page. We can fit a curve to our distribution and then multiply that curve against a linear function to get the expected result distribution (pivoting off the mean). Let’s try it.
 
 ```c
@@ -135,6 +137,7 @@ root [13] correctedFunc.Draw("SAME");
 root [14] c1->SaveAs("corrected.png");
 Info in <TCanvas::Print>: png file corrected.png has been created
 ```
+![The "corrected search" distribution of text/gemini responses](images/tlgs2.png)
 
 I’m too lazy to add a legend to the plot. The red curve is the fitted distribution. And the green one is the *“corrected”* distribution. Now limiting the highlighting to the first 5K characters seems to not be a good idea after all. Seems to be much space to the right. But how much? Well, we can ask ROOT to inspect the curve.
 
@@ -174,6 +177,7 @@ Info in <TCanvas::MakeDefCanvas>:  created default TCanvas with name c1
 root [6] c1->SaveAs("scatter.png")
 Info in <TCanvas::Print>: png file scatter.png has been created
 ```
+![Scatter plot of text/gemini page size vs number of lines](images/tlgs3.png)
 
 Underwhelming. Sure there’s a trend of more equal larger file size. But there’s no interesting trend. Unless you count files aiming to be 20K in size but only have a few lines. I guess no result is also a result. I guess that just means there are very different ways how people write on Gemini. Maybe this points to machine-generated content? Some long URL? Maybe worth investigating. But not today. Nevertheless, I want a histogram of the distribution.
 
@@ -185,6 +189,7 @@ root [8]  h2->Draw("LEGO1")
 root [9] c1->SaveAs("h2d.png")
 Info in <TCanvas::Print>: png file h2d.png has been created
 ```
+![2D Histogram of text/gemini page size vs number of lines](images/tlgs4.png)
 
 I should have gone with a histogram in the first place. It clearly shows the distribution - there’s a lot of small files and some medium-sized files. Big ones are rare. I should have expected this. The 1st histogram already shows small file sizes.
 
@@ -215,6 +220,7 @@ Info in <TCanvas::MakeDefCanvas>:  created default TCanvas with name c1
 root [9] c1->SaveAs("inlink_hist.png")
 Info in <TCanvas::Print>: png file inlink_hist.png has been created
 ```
+![Histogram of inlinks for all gemini pages](images/tlgs5.png)
 
 Unsurprisingly, most pages that has a backlink have one (since pages with 0 backlinks will not register in our SQL query). I’m surprised that there aren’t more pages with more backlinks. I assume sites like geminispace.info, medusae.space, and so on would have a lot of backlinks. I think the bin does not overlap thus not showing up in a histogram. Surprisingly, there aren’t much cross-capsule backlinks. 12687 is the total on the entire index. That’s too low considering the amount of work people put into their content and aggregators generating backlinks.
 
