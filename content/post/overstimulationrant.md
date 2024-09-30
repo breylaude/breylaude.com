@@ -10,7 +10,7 @@ categories = [
 ]
 +++
 
-Sometimes, things get just a little too much, and it seems like there's nothing I can do and it all just weighs in. I think, personally, this is in part due three things, of which we shall explore, make valid and informed points about, rant vaguely until I run out of things to say.
+Sometimes, things get just a little too much, and it seems like there's nothing I can do and it all just weighs in. I think, personally, this is in part due three things of which we shall explore,(make valid and informed points about) rant vaguely until I run out of things to say.
 
 ## Advertising
 
