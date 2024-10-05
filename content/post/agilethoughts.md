@@ -1,5 +1,5 @@
 +++
-title = "About Agile"
+title = "Agile?"
 description = ""
 tags = [
     "agile",
@@ -13,9 +13,9 @@ categories = [
 ]
 +++
 
-A friend of mine we often talk about software design. He's skeptic about Agile Software Design, calling it *“software design by trial and error”*.
+Me and my friends often talk about software design. They're skeptic about Agile Software Design, calling it *“software design by trial and error”*.
 
-I share his criticism.
+I share their criticism.
 
 Yesterday I took a two-hour LinkedIn Learning class on Agile Software Design. It was an introduction only. My first impression is that Agile is, at one level, moving a to-do list of sticky notes around on a bulletin board, assigning programming tasks to the programming team with verbal instructions and discussion about how to program something.
 
