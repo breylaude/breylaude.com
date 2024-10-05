@@ -1,5 +1,5 @@
 +++
-title = "Normal Form Designators"
+title = "Normal Form Designators (NFDs)"
 description = ""
 tags = [
     "database",
