@@ -1,6 +1,6 @@
 baseURL = 'https://breylaude.com/'
 languageCode = 'en-us'
-title = 'breylaude.com'
+title = 'Hackerman's WeBlog'
 theme = 'Hugo-Octopress'
 
 # Disqus shortcode
@@ -83,7 +83,7 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
   author = "Brey"
 
   # This text appears in the site header under website title
-  subtitle = "Embedded Systems, C/C++, RTOS, Linux and Security"
+  subtitle = "Embedded Systems, C/C++, Linux, and Security"
 
   # Search engine URL
   searchEngineURL = "https://www.google.com/search"
