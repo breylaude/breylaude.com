@@ -10,8 +10,9 @@ categories = [
 ]
 +++
 
-Building a CHIP-8 emulator is a great way to understand emulation concepts, low-level programming, and virtual machines. I want to share a basic outline to help you get started if you're a newcomer in C++, including all the key components you'll need to implement.
+Building a CHIP-8 emulator is a great way to understand emulation concepts, low-level programming, and virtual machines. I want to share a basic outline to help you get started if you're a newcomer in C++ and I will include all the key components you'll need to implement.
 
+### What is CHIP-8?
 CHIP-8 is a simple interpreted programming language that was designed for early microcomputers. It has a straightforward architecture with the following key components:
 
 - Memory: 4 KB of RAM.
