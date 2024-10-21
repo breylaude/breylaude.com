@@ -1,6 +1,6 @@
 baseURL = 'https://breylaude.com/'
 languageCode = 'en-us'
-title = 'Hackerman: Weblog'
+title = 'blaude weblog'
 theme = 'Hugo-Octopress'
 
 # Disqus shortcode
