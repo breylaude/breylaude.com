@@ -45,7 +45,7 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
   # Sidebar text also supports markdown
   # New lines can be added with two spaces at the end of line. New paragraphs can be added with two an empty line.
   # when adding two new lines, remember to remove the indentation otherwise the new line will be treated as a codeblock
-  sidebarText = """HI! I'm Brey, I'm a Programmer, a Security hacker, GNU/Linux cultist, hardware hacker, security consultant and Chief Hacking Officer @Laude Technologies.
+  sidebarText = """HI! I'm Brey,I'm a computer programmer & a security hacker. I keep this blog to write about my thoughts but mostly I write stupid code
 
   [Read More](/about)
 
@@ -83,7 +83,7 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
   author = "Brey"
 
   # This text appears in the site header under website title
-  subtitle = "Embedded systems, C/C++, GNU/Linux, and Infosec"
+  subtitle = "beep boop doung things for the computer"
 
   # Search engine URL
   searchEngineURL = "https://www.google.com/Brey Laude"
