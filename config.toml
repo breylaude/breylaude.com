@@ -40,12 +40,12 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
   sidebarRecentLimit = 15
 
   # Sidebar header - passed to markdownify so you can write markdown here
-  sidebarHeader = "Who Am I?"
+  sidebarHeader = "whoami"
 
   # Sidebar text also supports markdown
   # New lines can be added with two spaces at the end of line. New paragraphs can be added with two an empty line.
   # when adding two new lines, remember to remove the indentation otherwise the new line will be treated as a codeblock
-  sidebarText = """HI! I'm Brey,I'm a computer programmer & a security hacker. I keep this blog to write about my thoughts but mostly I write stupid code
+  sidebarText = """I'm Brey,I'm a computer programmer & a security hacker
 
   [Read More](/about)
 
@@ -74,7 +74,7 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
 
   # If set to true, navigation menu links will open in a new window with the exception of links to root ("/")
   # If this item does not exist or set to false, then navigation menu links will open in the same window
-  navigationNewWindow = true
+  navigationNewWindow = false
 
   # If false, all of blog post will appear on front page (and in pagination)
   truncate = true
@@ -83,7 +83,7 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
   author = "Brey"
 
   # This text appears in the site header under website title
-  subtitle = "beep boop doung things for the computer"
+  subtitle = "beep boop doing things for the computer"
 
   # Search engine URL
   searchEngineURL = "https://www.google.com/Brey Laude"
