@@ -11,7 +11,6 @@ categories = [
 ]
 +++
 
-### Intro
 By burning the Atmega328 Bootloader, you use a little more memory in the chip, but for most users, it’s easier to upload future projects. Basically, the bootloader allows the microprocessor to receive a new project from your pc through the TX and RX pins. This happens immediately after you or your programming device resets the processor. Examples of programmers that take advantage of this include the *CH340G*, *FTDI Basic*, *PL2303*, or *CP2102*.
 
 For example, let’s say your purchased a new *Atmega328 IC* as a backup for your Arduino UNO. If this new IC did not come with a bootloader already pre-installed, you might use this procedure. Additionally, if you plan to use the Atmega328 as a stand-alone chip for a project, you might use this procedure to burn the bootloader.
