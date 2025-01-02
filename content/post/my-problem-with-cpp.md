@@ -1,16 +1,16 @@
 +++
-title = "My problems with C++"
+title = "My problem with C++"
 description = ""
 tags = [
-    "c/c++",
+    "C/C++",
 ]
 date = "2022-11-30"
 categories = [
-    "c/c++",
+    "C/C++",
 ]
 +++
 
-I have been really annoyed by C++ recently. I love C++. It gives me the absolute best performance out of all languages with a high level of abstraction. But it has problems that makes it borderline unusable sometimes.
+I have been really annoyed by C++ recently. I fucking love C++. It gives me the absolute best performance out of all languages with a high level of abstraction. But it has problems that makes it borderline unusable sometimes.
 
 ### The good
 C++ gives me 100% control over very fine details on exactly when and how some low-level operation is performed. Unlike GC languages when reading data, with RAII. I can open a file with `std::ifstream`, read data then leave. I know RAII will close the file descriptor at the end of the function. Or I can manually scope the object to make it close early. No matter there’s some pesky exception. When writing a cache, C++ allocators allow me to decide an upper bound beforehand. Then react to too much data very rapidly and easily. Intel’s TBB provides very good concurrent containers that help tremendously remove mutexes from my code. Making my code blazingly fast and so on.
