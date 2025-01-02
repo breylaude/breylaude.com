@@ -1,16 +1,18 @@
 +++
-title = "Car Hacking Experience"
+title = "Car Hacking Update"
 description = ""
 tags = [
-    "hacking",
+    "Hacking",
 ]
 date = "2023-11-17"
 categories = [
-    "automotive",
+    "Automotive",
 ]
 +++
 
-Just wanted to share that I was able to install some new modules/ECUs, and the car didn't seem to mind. There were no security checks. The module I added is from the same manufacturer, but if someone has the time, they could build their own module and slip it into their car.
+I've been talking shit about hacking cars recently, and now for the latest update.
+
+Good news. I just wanted to share that I was able to install some new modules/ECUs, and the car didn't seem to mind. There were no security checks. The module I added is from the same manufacturer, but if someone has the time, they could build their own module and slip it into their car.
 
 I had this idea to amp up the car with a combination of traction and stability control, useful for some specific off-road situations. So, first things first, I set out to get a copy of the workshop manual for the car - which contains detailed wiring diagrams of all components. Reading through the manual, I discovered that the *Electronic Brake Control Module* (EBCM) was in charge of the feature I was looking for.
 
