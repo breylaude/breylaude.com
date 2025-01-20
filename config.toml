@@ -86,7 +86,7 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
   subtitle = "Brey Laude's Weblog"
 
   # Search engine URL
-  searchEngineURL = "https://tinyurl.com/brey-laude"
+  searchEngineURL = ""
 
   # Text of the "Continue Reading" label. Supports markdown and inline HTML.
   # For example, &rarr; == right arrow.
@@ -102,7 +102,7 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
 
   # Set to true to use a text label for RSS instead of an icon
   # This is overwritten by the "rss" setting
-  # textrss = false
+  textrss = true
 
   # Website's default description
   description = "Brey's Weblog"
@@ -140,12 +140,12 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
 
   # Twitter card config
   # Enable with this.
-  # twitterCardEnabled = true
+  twitterCardEnabled = true
   # Don't include the @.
-  # twitterCardSite = 
-  # twitterCardDomain = "breylaude.com"
+  twitterCardSite = "breylaude"
+  twitterCardDomain = "breylaude.com"
   # Don't include the @.
-  # twitterCardAuthor = "breylaude"
+  twitterCardAuthor = "breylaude"
 
   # Set to true to enable compact index. Set to false or remove to go back to classic view.
    compactIndex = true
