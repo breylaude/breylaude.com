@@ -83,10 +83,10 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
   author = "Brey"
 
   # This text appears in the site header under website title
-  subtitle = "Brey Laude's Weblog"
+  # subtitle = "Brey Laude's Weblog"
 
   # Search engine URL
-  searchEngineURL = ""
+  searchEngineURL = "/"
 
   # Text of the "Continue Reading" label. Supports markdown and inline HTML.
   # For example, &rarr; == right arrow.
