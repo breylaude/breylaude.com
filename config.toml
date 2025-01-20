@@ -56,7 +56,7 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
   """
   # Sidebar menu - if true will add a sidebar menu between sidebar text and recent posts
   sidebarMenuEnabled = true
-  sidebarMenuHeader = "Collections"
+  sidebarMenuHeader = "blogs"
 
   # sidebar links
   github = "https://github.com/breylaude/"
@@ -194,16 +194,16 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
 # Enable with "sidebarMenuEnabled = true" under [params]
 # Header text is "sidebarMenuHeader" under [params]
 [[menu.sidebar]]
-  Name = "Laude Technologies' Website"
-  URL = "https://laudetechnologies.com"
+  Name = "Peter Thiel"
+  URL = "https://fs.blog/tag/peter-thiel/"
   weight = 0
 
 [[menu.sidebar]]
-  Name = "Categories"
-  URL = "/categories"
+  Name = "Raw Thought"
+  URL = "http://www.aaronsw.com/weblog/"
   weight = 1
 
 [[menu.sidebar]]
-  Name = "About"
-  URL = "/about"
+  Name = "paulg"
+  URL = "https://www.paulgraham.com/articles.html"
   weight = 2
