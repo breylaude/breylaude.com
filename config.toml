@@ -212,3 +212,8 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
   Name = "blakemasters"
   URL = "https://blakemasters.tumblr.com/peter-thiels-cs183-startup"
   weight = 4
+
+[[menu.sidebar]]
+  Name = "Martin's blog/website thingy"
+  URL = "https://clehaxze.tw/blog"
+  weight = 5
