@@ -196,14 +196,19 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
 [[menu.sidebar]]
   Name = "Peter Thiel"
   URL = "https://fs.blog/tag/peter-thiel/"
-  weight = 0
+  weight = 1
 
 [[menu.sidebar]]
   Name = "Raw Thought"
   URL = "http://www.aaronsw.com/weblog/"
-  weight = 1
+  weight = 2
 
 [[menu.sidebar]]
   Name = "paulg"
   URL = "https://www.paulgraham.com/articles.html"
-  weight = 2
+  weight = 3
+
+[[menu.sidebar]]
+  Name = "blakemasters"
+  URL = "https://blakemasters.tumblr.com/peter-thiels-cs183-startup"
+  weight = 4
