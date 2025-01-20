@@ -1,5 +1,5 @@
 +++
-title = "Building a CHIP-8 Emulator (C++)"
+title = "Building a CHIP-8 Emulator"
 description = ""
 tags = [
     "emulator", "c++", "virtual machine",
