@@ -40,7 +40,7 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
   sidebarRecentLimit = 15
 
   # Sidebar header - passed to markdownify so you can write markdown here
-  sidebarHeader = "whoami"
+  sidebarHeader = "About"
 
   # Sidebar text also supports markdown
   # New lines can be added with two spaces at the end of line. New paragraphs can be added with two an empty line.
@@ -69,6 +69,7 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
   youtube = ""
   facebook = ""
   instagram = ""
+  leetcode = "https://leetcode.com/breylaude/"
 
   # --- End sidebar options ---
 
@@ -173,11 +174,6 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
   Name = "Source on Github"
   URL = "https://www.github.com/breylaude/breylaude.com"
   weight = 2
-
-[[menu.main]]
-  Name = "LeetCode"
-  URL = "https://leetcode.com/u/breylaude/"
-  weight = 3
 
 # Sidebar menus
 # Enable with "sidebarMenuEnabled = true" under [params]
