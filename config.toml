@@ -61,7 +61,7 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
   # sidebar links
   github = "https://github.com/breylaude/"
   bitbucket = ""
-  twitter = "https://x.com/breylaude"
+  x = "https://x.com/breylaude"
   mastodon = "https://infosec.exchange/@breylaude"
   keybase = "https://keybase.io/brey"
   stackoverflow = ""
@@ -69,7 +69,6 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
   youtube = ""
   facebook = ""
   instagram = ""
-  leetcode = "https://leetcode.com/breylaude/"
 
   # --- End sidebar options ---
 
