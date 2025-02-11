@@ -1,5 +1,5 @@
 +++
-title = "Advertising, Dopamine Traps, and Memetic Hazards"
+title = "Ads, Dopamine Traps, and Memetic Hazards"
 description = ""
 tags = [
     "Rant",
