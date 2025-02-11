@@ -165,30 +165,19 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
 # If navigationNewWindow (under [params]) is set to true then all links except root ("/") will open in a new window
 # If it does not exist or is set to false then links will open in the same window
 [[menu.main]]
-  Name = "Home Page"
+  Name = "Home"
   URL = "/"
   weight = 1
 
 [[menu.main]]
-  Name = "Security"
-  URL = "/security"
+  Name = "Source on Github"
+  URL = "https://www.github.com/breylaude/breylaude.com"
   weight = 2
 
 [[menu.main]]
-  Name = "Site's Source on Github"
-  URL = "https://www.github.com/breylaude/breylaude.com"
-
-[[menu.main]]
-  Name = "About"
-  URL = "/about"
-
-[[menu.main]]  
-  Name = "Logs"
-  URL = "/log"
-
-[[menu.main]]  
-  Name = "Bug Bounty"
-  URL = "/bug-bounty"
+  Name = "LeetCode"
+  URL = "https://leetcode.com/u/breylaude/"
+  weight = 3
 
 # Sidebar menus
 # Enable with "sidebarMenuEnabled = true" under [params]
