@@ -81,7 +81,7 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
   truncate = true
 
   # Author's name (appears in meta tags and under posts)
-  author = "Brey"
+  author = "Brey Laude"
 
   # This text appears in the site header under website title
   # subtitle = "Brey Laude's Weblog"
@@ -149,7 +149,7 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
   twitterCardAuthor = "breylaude"
 
   # Set to true to enable compact index. Set to false or remove to go back to classic view.
-   compactIndex = true
+   compactIndex = false
 
   # Set mainSections.
   # mainSections = ["post", "blog"]
