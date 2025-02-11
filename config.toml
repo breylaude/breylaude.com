@@ -60,12 +60,12 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
 
   # sidebar links
   github = "https://github.com/breylaude/"
-  bitbucket = ""
+  bitbucket = "https://bitbucket.org/brey-laude/"
   twitter = "https://x.com/0x10b"
   mastodon = "https://infosec.exchange/@breylaude"
   keybase = "https://keybase.io/brey"
   stackoverflow = ""
-  linkedin = ""
+  linkedin = "https://www.linkedin.com/in/blaude/"
   youtube = ""
   facebook = ""
   instagram = ""
