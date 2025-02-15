@@ -1,16 +1,14 @@
 +++
 title = "Assembly version of Hello, World!"
-description = ""
+description = "Today's review of the compilation"
 tags = [
     "assembly",
 ]
 date = "2020-09-22"
 categories = [
-    "compilation",
+    "random",
 ]
 +++
-
-Today's review of the compilation.
 
 ```assembly
 datas segment use16 
