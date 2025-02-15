@@ -1,5 +1,5 @@
 +++
-title = ""The Devil’s Yelp Review: 5 Stars, Would Recommend""
+title = "The Devil’s Yelp Review: 5 Stars, Would Recommend"
 description = ""
 tags = [
     "",
