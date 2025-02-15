@@ -102,7 +102,7 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
 
   # Set to true to use a text label for RSS instead of an icon
   # This is overwritten by the "rss" setting
-  textrss = true
+  textrss = false
 
   # Website's default description
   description = "Brey's Weblog"
