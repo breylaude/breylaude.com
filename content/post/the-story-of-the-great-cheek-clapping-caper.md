@@ -1,6 +1,6 @@
 +++
-title = "Lemme clap thy cheeks"
-description = "The Story of the Great Cheek Clapping Caper"
+title = "The Story of the Great Cheek Clapping Caper"
+description = ""
 tags = [
     "",
 ]
