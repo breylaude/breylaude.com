@@ -47,9 +47,12 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
   # when adding two new lines, remember to remove the indentation otherwise the new line will be treated as a codeblock
   sidebarText = """ 
 
-  *No about*
+  *Welcome to my poorly written blog*
+  (Read more)[/about]
+  
+  The singularity is near
 
-  The best way to reach me is via: laude(at)magicbroccoli.de
+  laude(at)magicbroccoli.de
   
   **GPG key: 11A2 A675 360B 80A8**
   
