@@ -37,7 +37,7 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
 
   # --- Start sidebar options ---
   # Number of last posts that will be displayed in the sidebar - set to 0 or remove to hide this section
-  sidebarRecentLimit = 15
+  sidebarRecentLimit = 5
 
   # Sidebar header - passed to markdownify so you can write markdown here
   sidebarHeader = "About"
@@ -65,7 +65,7 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
   mastodon = "https://infosec.exchange/@breylaude"
   keybase = "https://keybase.io/brey"
   stackoverflow = ""
-  linkedin = "https://www.linkedin.com/in/blaude/"
+  linkedin = ""
   youtube = ""
   facebook = ""
   instagram = ""
@@ -105,7 +105,7 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
   textrss = false
 
   # Website's default description
-  description = "Brey's Weblog"
+  description = "Brey Laude's Website"
 
   # Populate this with your own search keywords - these will appear in the meta tags
    defaultKeywords = ["brey" , "laude" , "brey laude" , "laude technologies"]
@@ -148,7 +148,7 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
   twitterCardAuthor = "breylaude"
 
   # Set to true to enable compact index. Set to false or remove to go back to classic view.
-   compactIndex = false
+   compactIndex = true
 
   # Set mainSections.
   # mainSections = ["post", "blog"]
