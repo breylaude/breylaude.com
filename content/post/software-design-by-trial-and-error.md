@@ -1,18 +1,16 @@
 +++
-title = "Agile"
+title = "Software Design by Trial and Error"
 description = ""
 tags = [
-    "Agile",
-    "Thoughts",
-    "Software",
+    "agile",
 ]
 date = "2022-02-18"
 categories = [
-    "Software Development"
+    "software"
 ]
 +++
 
-Me and my friends often talk about software design. They're skeptic about Agile Software Design, calling it *“software design by trial and error”*.
+Me and my friends often talk about software design. They're skeptic about **Agile Software Design**, calling it *“software design by trial and error”*.
 
 I share their criticism.
 
@@ -20,6 +18,6 @@ Yesterday, I took a two-hour LinkedIn Learning class on Agile Software Design. I
 
 I have a bias against Agile. My experience with Agile is from working with my current company that used variants of Agile. In my judgment, Agile did not work. Our programs had many defects.
 
-Much exceptional software, like the software that controlled the Space Shuttle, was designed, coded, tested, and deployed long before Agile Software and legions of Agile consultants appeared.
+Much exceptional software, like the software that controlled the Space Shuttle, was designed, coded, tested, and deployed **long** before Agile Software and legions of Agile consultants appeared.
 
 I would welcome any comments about Agile Software design. If you have success with Agile, please tell me about it.
