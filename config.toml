@@ -83,7 +83,7 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
   author = "Brey Laude"
 
   # This text appears in the site header under website title
-  # subtitle = "Brey Laude's Weblog"
+   subtitle = "beep boop doing things for the computer"
 
   # Search engine URL
   searchEngineURL = "/"
