@@ -48,7 +48,7 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
   sidebarText = """ 
 
   *Welcome to my poorly written blog*
-  (Read more)[/about]
+  [Read more](/about)
   
   The singularity is near
 
